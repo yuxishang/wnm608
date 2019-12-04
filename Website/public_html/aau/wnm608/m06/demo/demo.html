@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Components</title>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="theme.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/fake_interactions.js"></script>
+</head>
+<body>
+  
+  <header class="navbar">
+    <div class="container">
+      <h1>Components</h1>
+    </div>
+  </header>
+
+    <div class="container">
+    <h2>Checkbox</h2>
+
+    <input type="checkbox">
+
+    <h2>Label</h2>
+
+    <div>
+      <label>
+        Label
+        <input type="checkbox">
+      </label>
+    </div>
+    <div>
+      <label for="product-1">Label</label>
+      <input type="checkbox" id="product-1">
+    </div>
+  </div>
+<div class="container">
+<h2>Fav</h2>
+
+    <div class="fav">
+      <input type="checkbox" id="fav-1">
+      <label for="fav-1">&hearts;</label>
+    </div>
+  </div>
+  <div class="container">
+    <h2>GRID</h2>
+
+    <div class="card">
+      <h3>Row</h3>
+
+      <p>A row always starts the grid.</p>
+
+      <div class="example">
+        <div class="row">
+          <div class="col-xs-6">Column</div>
+          <div class="col-xs-6">Column</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2>NAVS</h2>
+
+    <div class="card">
+      <h3>Default</h3>
+
+      <p>Default nav is something that is vertical.</p>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-3">
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- .col-xs-12.col-md-9>p>lorem50 -->
+        <div class="col-xs-12 col-md-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel officiis libero repellendus corrupti, magnam totam vero repellat fuga omnis error quaerat suscipit sit dicta nesciunt quae iure tempore sunt amet consequatur. Veniam pariatur ipsum, autem dicta quaerat molestiae commodi. Repudiandae obcaecati eos commodi deserunt dolorum omnis id repellendus nisi aliquam.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Flex</h3>
+
+      <nav class="nav nav-flex">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li class="active"><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+
+      <h3>Stretch</h3>
+
+      <nav class="nav nav-stretch">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li class="active"><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="card">
+      <h3>Pills</h3>
+
+      <nav class="nav nav-pills">
+        <ul>
+          <li class="active"><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="card">
+      <h3>Bread Crumbs</h3>
+
+      <nav class="nav nav-crumbs">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li class="active"><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="card">
+      <h3>Tabs</h3>
+
+      <nav class="nav nav-tabs">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li class="active"><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>TABLES</h2>
+
+    <div class="card">
+      <h3>Default</h3>
+
+      <table class="table striped">
+        <thead>
+          <!-- tr>th*5>lorem1 -->
+          <tr>
+            <th>Lorem.</th>
+            <th>Accusamus.</th>
+            <th>Delectus.</th>
+            <th>Assumenda!</th>
+            <th>Cumque.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- tr*5>td*5>lorem1 -->
+          <tr>
+            <td>Lorem.</td>
+            <td>Possimus.</td>
+            <td>Natus.</td>
+            <td>Non?</td>
+            <td>Ab.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Itaque.</td>
+            <td>Saepe.</td>
+            <td>Nemo.</td>
+            <td>Iste.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Itaque!</td>
+            <td>Harum.</td>
+            <td>Unde.</td>
+            <td>Iste!</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Error!</td>
+            <td>Neque.</td>
+            <td>Unde.</td>
+            <td>Nostrum.</td>
+          </tr>
+          <tr>
+            <td>Lorem.</td>
+            <td>Enim!</td>
+            <td>Dolor.</td>
+            <td>Architecto.</td>
+            <td>Consequatur.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="container">
+    <h2>Button</h2>
+<button type="button" class="buy-now-btn" name="button">$5</button></a>
+    <div class="card">
+      <input type="checkbox">
+    </div>
+
+<div class="navigation-left">
+        <a href="#">Online Store</a>
+        <a href="#">About Lula's</a>
+        <a href="#">Location</a>
+      </div>
+
+<a href="#" class="cart-btn">Add to cart</a>
+
+
+ <button class="login-btn" href="">Login</button>
+
+
+  <div class="promoCode"><label for="promo"></label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" class="btn"></a></div>
+  
+  <a href="#" class="remove">x</a>
+
+ <div class="collection-sort col-xs-12 col-sm-6 col-lg-3">
+      <label>Filter by:</label>
+      <select>
+        <option value="/">Caramels</option>
+        <option value="/">Fruit</option>
+        <option value="/">Dark Chocolate</option>
+        <option value="/">Nut</option>
+      </select>
+    </div>
+
+    <div class="collection-sort col-xs-12 col-sm-6 col-lg-3">
+      <label>Sort by:</label>
+      <select>
+        <option value="/">Best Selling</option>
+        <option value="/">Product Low to High</option>
+        <option value="/">Product High to Low</option>
+      </select>
+    </div>
+
+<div id="product-list">
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product1.jpg"></div>
+    <h3 class="title">Coconut lime</h3></a>
+    <div class="name">A crisp refreshing lime coconut filling in a dark chocolate shell.</div></div>
+
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product2.jpg"></div>
+    <h4 class="title">Lanvender</h4></a>
+    <div class="name">This luxurious chocolate features a 59% cacao content with notes of wine, fruit, nuts, and oak.
+Infused with the delicious flavors of lavender essence and blueberries.</div></div>
+  <div class="product">
+  <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product3.jpg"></div>
+    <h3 class="title">Pistachio</h3></a>
+    <div class="name">Unique combination of fine chocolate and premium Turkish pistachios. </div></div>
+
+  <div class="product">
+   <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product4.jpg"></div>
+    <h3 class="title">Rosé</h3></a>
+    <div class="name">Lula's Rosé chocolate infused with rosé wine! This is the hottest product of the summer! It's rosé season, so sit back, pour a glass, and take a bite of the sweetest new sensation of the year.</div></div>
+
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product5.jpg"></div>
+    <h3 class="title">Salted Caramel</h3></a>
+    <div class="name">Rich dark chocolate wrapped around decadent caramel,Sprinkled with coarse sea salt</div>
+  </div>
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product6.jpg"></div>
+    <h3 class="title">Champagne</h3></a>
+    <div class="name">Dark Ganache Blended with a touch of champagne.</div>
+  </div>
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product7.jpg"></div>
+    <h3 class="title">Cappuccino</h3></a>
+    <div class="name">Luxurious milk chocolate infused with coffee</div></div>
+
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product8.jpg"></div>
+    <h4 class="title">Matcha</h4></a>
+    <div class="name">Matcha powder is blended in white chocolate. Enjoy deep and rich matcha aroma and smooth texture of chocolate</div></div>
+  <div class="product">
+  <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product9.jpg"></div>
+    <h3 class="title">Strawberry</h3></a>
+    <div class="name">White chocolate mixed with powdered strawberries and three kinds of dried fruit, almond puffs, and a touch of banana essence. 12 pieces per box. </div></div>
+
+  <div class="product">
+   <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product10.jpg"></div>
+    <h3 class="title">Dark Rum</h3></a>
+    <div class="name">Rich,dark chocolate infused with spiced rum.</div></div>
+
+  <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product11.jpg"></div>
+    <h3 class="title">Orange</h3></a>
+    <div class="name">Oranges covered in dark Chocolate.</div>
+  </div>
+    <div class="product">
+    <div class="img"><a href="http://go-roxy.com/aau/wnm608/m07/sp.html"><img src="images/product12.jpg"></div>
+    <h3 class="title">Hazelnut</h3></a>
+    <div class="name">Rich hazelnut praline whipped with creamy milk chocolate.</div>
+  </div>

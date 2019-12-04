@@ -1,0 +1,5239 @@
+@charset "UTF-8";
+#pdp_nav .navcon .menu ul {
+    float: right !important;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/fonts/manrope-bold.woff2") format("woff2"), url("/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/fonts/manrope-bold.woff") format("woff"), url("/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/fonts/manrope-bold.otf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/fonts/manrope-medium.woff2") format("woff2"), url("/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/fonts/manrope-medium.woff") format("woff"), url("/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/fonts/manrope-medium.otf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+body,
+html {
+    font-family: "Manrope", sans-serif;
+}
+
+html {
+    overflow: unset!important;
+}
+
+*,
+*:before,
+*:after {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.p30-section {
+    visibility: hidden;
+}
+
+
+/*.p30-section-trigger{
+	position: relative;
+	top: -100vh;
+}*/
+
+.shown {
+    visibility: visible;
+}
+
+.video-show {
+    display: block !important;
+}
+
+.video-hide {
+    display: none !important;
+}
+
+#p30-container {
+   font-family: "Manrope", sans-serif;
+}
+
+.p30-h1 {
+    margin: 0;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: -0.0375em;
+    font-size: 12vw;
+}
+
+.p30-section-title-font {
+    font-size: 15vw;
+    font-weight: 800;
+    text-anchor: middle;
+}
+
+.p30-h2 {
+    margin: 0 0 0.5em 0;
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: -0.016em;
+}
+
+.p30-h2 span {
+    word-break: keep-all;
+}
+
+.p30-p {
+    line-height: 1.5em;
+    margin: 0 0 0.5em 0;
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    .p30-h2 {
+        font-size: 9vw;
+    }
+    .p30-tvc-title {
+        width: 9vw;
+    }
+    .p30-p {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 769px) {
+    .p30-h2 {
+        font-size: 6.255vw;
+    }
+    .p30-tvc-title {
+        width: 6.255vw;
+    }
+    .p30-p {
+        font-size: 2.25vw;
+    }
+}
+
+#p30-intro-colors-caption.p30-h2 {
+    margin: 0;
+}
+
+@media (min-aspect-ratio: 4 / 3) {
+    .p30-h2 {
+        font-size: 4.17vw;
+    }
+    .p30-tvc-title {
+        width: 4.17vw;
+    }
+    #p30-intro-colors-caption.p30-h2 {
+        font-size: 2.08vw;
+    }
+    #p30-intro-colors-number.p30-h2 {
+        font-size: 2vw;
+    }
+    .p30-p {
+        font-size: 1.2vw;
+    }
+    .p30-family-more .p30-p {
+        font-size: 1vw;
+    }
+}
+
+.p30-h1-area .p30-h1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    max-width: 100%;
+    padding: 0 7vw;
+    z-index: 1;
+}
+
+.p30-h1-area .p30-component-description {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 42vw;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.p30-h1-area .p30-h1 {
+    margin-top: -0.375em !important;
+}
+
+[class^="p30-text-animate"] {
+    display: inline-block;
+    overflow-y: hidden;
+    position: relative;
+    line-height: 1.5em;
+    margin-top: -0.25em;
+    margin-bottom: -0.25em;
+}
+
+[class^="p30-text-animate"]>span {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    display: block;
+}
+
+.animated [class^="p30-text-animate"]>span {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.p30-text-animate-1>span {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.p30-text-animate-2>span {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.p30-text-animate-3>span {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.p30-text-animate-4>span {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.p30-text-animate-5>span {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.p30-text-animate-6>span {
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+.p30-text-animate-7>span {
+    -webkit-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+}
+
+.p30-text-animate-8>span {
+    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.p30-text-animate-9>span {
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s;
+}
+
+.p30-text-animate-10>span {
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+[class^="p30-fullscreen-"] {
+    position: relative;
+}
+
+.p30-fullscreen-1 {
+    height: 750px;
+    height: calc(100vh - 44px);
+}
+
+.p30-fullscreen-15 {
+    height: 1125px;
+    height: calc((100vh - 44px) * 1.5);
+}
+
+.p30-fullscreen-2 {
+    height: 1500px;
+    height: calc((100vh - 44px) * 2);
+}
+
+.p30-fullscreen-25 {
+    height: 1875px;
+    height: calc((100vh - 44px) * 2.5);
+}
+
+.p30-fullscreen-3 {
+    height: 2250px;
+    height: calc((100vh - 44px) * 3);
+}
+
+.p30-fullscreen-35 {
+    height: 2625px;
+    height: calc((100vh - 44px) * 3.5);
+}
+
+.p30-fullscreen-4 {
+    height: 3000px;
+    height: calc((100vh - 44px) * 4);
+}
+
+.p30-fullscreen-425 {
+    height: 3187.5px;
+    height: calc((100vh - 44px) * 4.25);
+}
+
+.p30-fullscreen-45 {
+    height: 3375px;
+    height: calc((100vh - 44px) * 4.5);
+}
+
+.p30-fullscreen-5 {
+    height: 3750px;
+    height: calc((100vh - 44px) * 5);
+}
+
+.p30-fullscreen-6 {
+    height: 4500px;
+    height: calc((100vh - 44px) * 6);
+}
+
+.p30-fullscreen-65 {
+    height: 4875px;
+    height: calc((100vh - 44px) * 6.5);
+}
+
+.p30-fullscreen-7 {
+    height: 5250px;
+    height: calc((100vh - 44px) * 7);
+}
+
+.p30-fullscreen-8 {
+    height: 6000px;
+    height: calc((100vh - 44px) * 8);
+}
+
+.p30-fullscreen-9 {
+    height: 6750px;
+    height: calc((100vh - 44px) * 9);
+}
+
+.p30-fullscreen-10 {
+    height: 7500px;
+    height: calc((100vh - 44px) * 10);
+}
+
+@media (min-width: 1024px) {
+    .p30-fullscreen-1 {
+        height: calc(100vh - 64px);
+    }
+    .p30-fullscreen-15 {
+        height: calc((100vh - 64px) * 1.5);
+    }
+    .p30-fullscreen-2 {
+        height: calc((100vh - 64px) * 2);
+    }
+    .p30-fullscreen-25 {
+        height: calc((100vh - 64px) * 2.5);
+    }
+    .p30-fullscreen-3 {
+        height: calc((100vh - 64px) * 3);
+    }
+    .p30-fullscreen-35 {
+        height: calc((100vh - 64px) * 3.5);
+    }
+    .p30-fullscreen-4 {
+        height: calc((100vh - 64px) * 4);
+    }
+    .p30-fullscreen-425 {
+        height: calc((100vh - 64px) * 4.25);
+    }
+    .p30-fullscreen-45 {
+        height: calc((100vh - 64px) * 4.5);
+    }
+    .p30-fullscreen-5 {
+        height: calc((100vh - 64px) * 5);
+    }
+    .p30-fullscreen-6 {
+        height: calc((100vh - 64px) * 6);
+    }
+    .p30-fullscreen-65 {
+        height: calc((100vh - 64px) * 6.5);
+    }
+    .p30-fullscreen-7 {
+        height: calc((100vh - 64px) * 7);
+    }
+    .p30-fullscreen-8 {
+        height: calc((100vh - 64px) * 8);
+    }
+    .p30-fullscreen-9 {
+        height: calc((100vh - 64px) * 9);
+    }
+    .p30-fullscreen-10 {
+        height: calc((100vh - 64px) * 10);
+    }
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .p30-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 44px;
+        z-index: 1;
+    }
+    @media (min-width: 1024px) {
+        .p30-sticky {
+            top: 64px;
+        }
+    }
+}
+
+.p30-sticky-fixed {
+    position: fixed;
+}
+
+.p30-sticky-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.p30-overflow {
+    overflow: hidden;
+    width: 100%;
+}
+
+.p30-component-description,
+.p30-component-description-center {
+    z-index: 20;
+    position: relative;
+    margin: 30px 30px 30px 30px;
+    padding-top: 30px;
+}
+
+.p30-component-description p:last-child,
+.p30-component-description-center p:last-child {
+    margin-bottom: 0;
+}
+
+.p30-component-description-center {
+    text-align: center;
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    .p30-component-description,
+    .p30-component-description-center {
+        max-width: 50vw;
+        padding: 65px 4vw;
+        margin: auto 0;
+    }
+    .p30-darkLight-camera {
+        max-width: 42vw;
+        padding: 25vh 4vw 0;
+        margin: 0;
+    }
+    .p30-component-description-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 769px){
+    .p30-component-description,
+    .p30-component-description-center {
+        padding: 65px 7vw;
+        width: 50%;
+    }
+    .p30-darkLight-camera {
+        max-width: 32vw;
+    }
+}
+
+[class^="p30-section-sticky"] .p30-component-tile {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.p30-component-figure {
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    width: 50vw;
+    max-width: 50vw;
+    overflow: hidden;
+}
+
+.p30-component-figure img {
+    height: auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+@supports ((-o-object-fit: contain) or (object-fit: contain)) {
+    .p30-component-figure img {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    [class^="p30-section-sticky"] .p30-component-tile {
+        top: 65px;
+        bottom: auto;
+    }
+    .p30-component-tile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    [class^="p30-section-sticky"] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+    [class^="p30-section-sticky"] .p30-component-tile {
+        bottom: 0;
+    }
+    .p30-component-figure {
+        position: relative;
+        margin: 15px;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16 / 9) {
+    .p30-component-figure {
+        padding-top: 65px;
+        padding-bottom: 0px;
+        padding-right: 8vw;
+    }
+}
+
+.p30-fullscreen-background {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.p30-fullscreen-background img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.p30-section-title-area {
+    position: relative;
+}
+
+.p30-section-title-area .p30-section-title {
+    z-index: 20;
+    -webkit-clip-path: inset(-1px 0 0.01%);
+    clip-path: inset(-1px 0 0.01%);
+    position: absolute;
+}
+
+.p30-section-title {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.p30-section-title svg {
+    height: auto;
+    width: 100%;
+}
+
+.p30-section-title-white svg {
+    /*-webkit-box-shadow: 0 0 0 150px #fff;
+  box-shadow: 0 0 0 150px #fff*/
+}
+
+#p30-photo-sensor {
+    background: #fff;
+}
+
+#p30-intro-camera-logo {
+    -webkit-transform: translate(-52%, -50%);
+    transform: translate(-52%, -50%);
+    width: 35vw;
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    will-change: transform;
+}
+
+@media (max-width: 768px) {
+    #p30-intro-camera-logo {
+        width: 75vw;
+    }
+}
+
+.intro-camera-curtainbg {
+    background-color: #ffffff !important;
+    width: 100%;
+    height: 100vh;
+}
+
+#p30-intro-camera-1,
+#p30-intro-camera-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    z-index: 4;
+    will-change: transform;
+}
+
+#p30-intro-camera-content {
+    position: relative;
+    top: -60vh;
+    margin-bottom: -50vh;
+}
+
+#p30-intro-hero-description {
+    position: relative;
+    margin-top: -45vh;
+    padding: 0;
+    padding-top: calc(32.5px + 65px);
+    padding-bottom: 130px;
+}
+
+#p30-intro-hero-left,
+#p30-intro-hero-right-container {
+    position: absolute;
+    height: 555px;
+    width: 349px;
+    height: calc(60vw * 1.63);
+    width: 60vw;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    #p30-intro-camera-content {
+        top: -45vh;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    #p30-intro-hero-left,
+    #p30-intro-hero-right-container {
+        height: calc(100vh - 130px);
+        width: calc((100vh - 130px) * 0.63);
+    }
+}
+
+#p30-intro-hero-reflection,
+#p30-intro-hero-right {
+    -webkit-transform: translate(0, 25vh);
+    transform: translate(0, 25vh);
+}
+
+#p30-intro-hero-reflection,
+#p30-intro-hero-reflection-container,
+#p30-intro-hero-right {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#p30-intro-hero-left,
+#p30-intro-hero-reflection,
+#p30-intro-hero-reflection-container,
+#p30-intro-hero-right {
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#p30-intro-hero-left,
+#p30-intro-hero-reflection,
+#p30-intro-hero-right {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#p30-intro-hero-reflection-container {
+    display: none;
+}
+
+#p30-intro-camera-1 {
+    background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-fallback_v1.png);
+}
+
+#p30-intro-camera-2 {
+    background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-fallback_v1.png);
+}
+
+#p30-intro-hero-left {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-left-fallback.png);
+}
+
+#p30-intro-hero-right {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-right-fallback.png);
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    #p30-intro-camera-1 {
+        background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-fallback-xs_v1.png);
+    }
+    #p30-intro-camera-2 {
+        background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-fallback-xs_v1.png);
+    }
+}
+
+@supports (not (-ms-ime-align: auto)) and ((mask-size: 100% 100%) or (-webkit-mask-size: 100% 100%)) {
+    #p30-intro-camera-1 {
+        background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01_v1.jpg);
+        /* -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/01-mask.png); */
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-mask_v1.png);
+        mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-mask_v1.png);
+    }
+    #p30-intro-camera-2 {
+        background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02_v1.jpg);
+        /* -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/02-mask.png); */
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-mask_v1.png);
+        mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-mask_v1.png);
+    }
+    #p30-intro-hero-left {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-left.jpg);
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-left-mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-left-mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-left-mask.png);
+    }
+    #p30-intro-hero-reflection {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-reflection.png);
+    }
+    #p30-intro-hero-reflection-container {
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-reflection-mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-reflection-mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-reflection-mask.png);
+        display: block;
+    }
+    #p30-intro-hero-right {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-right.jpg);
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-right-mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-right-mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-right-mask.png);
+    }
+    @media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+        #p30-intro-camera-1 {
+            background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-xs_v1.jpg);
+            /* -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/01-mask-xs.png); */
+            -webkit-mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-xs-mask_v1.png);
+            mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01-xs-mask_v1.png);
+        }
+        #p30-intro-camera-2 {
+            background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-xs_v1.jpg);
+            /* -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/02-mask-xs.png); */
+            -webkit-mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-xs-mask_v1.png);
+            mask-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02-xs-mask_v1.png);
+        }
+    }
+    @media (min-device-pixel-ratio: 1.5),
+    (min-width: 769px) {
+        #p30-intro-camera-1 {
+            background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/01@2x_v1.jpg);
+        }
+        #p30-intro-camera-2 {
+            background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-hero/02@2x_v1.jpg);
+        }
+        #p30-intro-hero-left {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-left@2x.jpg);
+        }
+        #p30-intro-hero-right {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/hero-right@2x.jpg);
+        }
+    }
+}
+#p30-section1.p30-ie{background-image:url("/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/P30_Pro_kv-en.jpg");}
+#p30-tvc-canvas-trigger {
+    position: relative;
+    top: -65px;
+}
+
+#p30-tvc-canvas {
+    -webkit-clip-path: inset(0.2% 50% 0.1% 49.9%);
+    clip-path: inset(0.2% 50% 0.1% 49.9%);
+    height: calc(100vh - 44px);
+}
+
+#p30-tvc-canvas .p30-tvc-canvas-crop {
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    -webkit-transition: -webkit-clip-path 1s 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-clip-path 1s 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: clip-path 1s 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: clip-path 1s 0.5s cubic-bezier(0.77, 0, 0.175, 1), -webkit-clip-path 1s 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    background: #000;
+}
+
+#p30-tvc-canvas .p30-tvc-canvas-crop canvas {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0.25;
+}
+
+#p30-tvc-canvas video,
+#p30-tvc-mob-video {
+    position: absolute;
+    left: 30vw;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+    z-index: 20;
+    width: 40vw;
+    /*-webkit-clip-path: inset(0 0 100% 0);
+    clip-path: inset(0 0 100% 0);
+    -webkit-transition: -webkit-clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1), -webkit-clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);*/
+}
+
+.p30-tvc-content {
+    position: absolute;
+    top: 15vh;
+    left: 18vw;
+    z-index: 30;
+    width: 38vw;
+    color: #fff;
+}
+
+.p30-tvc-content a:link,
+.p30-tvc-content a:visited {
+    color: #fff;
+    margin-top: 5vh;
+    display: block;
+}
+
+.p30-tvc-content a:link>*,
+.p30-tvc-content a:visited>* {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5vw 0 0;
+}
+
+/*#p30-tvc-canvas.animated .p30-tvc-canvas-crop,
+#p30-tvc-canvas.animated video,
+#p30-tvc-canvas.animated #p30-tvc-mob-video {
+    -webkit-clip-path: inset(0 0 0 0) !important;
+    clip-path: inset(0 0 0 0) !important;
+}
+
+#p30-tvc-canvas.animated .p30-tvc-canvas-crop {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+#p30-tvc-canvas.animated video,
+#p30-tvc-canvas.animated #p30-tvc-mob-video {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}*/
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-tvc-content {
+        top: 0;
+        left: 12.5vw;
+        width: 75vw;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .p30-tvc-content>* {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+    #p30-tvc-canvas video,
+    #p30-tvc-mob-video {
+        left: 0;
+        top: 50%;
+        width: 100vw;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 4 / 3) {
+    .p30-tvc-content {
+        left: 8vw;
+        width: 50vw;
+    }
+    #p30-tvc-canvas video,
+    #p30-tvc-mob-video {
+        left: 20vw;
+        top: 50%;
+        width: 60vw;
+    }
+}
+
+#p30-performance-intro-overlay {
+    -webkit-clip-path: inset(-1px 0 0.01%);
+    clip-path: inset(-1px 0 0.01%);
+}
+
+#p30-intro-colors .p30-p {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+#p30-intro-colors-lifestyle {
+    padding-top: 56%;
+    margin: 0 -1vw 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#p30-intro-colors-lifestyle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transform: translate(0, 101%);
+    transform: translate(0, 101%);
+}
+
+#p30-intro-colors-lifestyle-container>div {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transform: translate(0, 0) scale(2, 2);
+    transform: translate(0, 0) scale(2, 2);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    background-size: cover;
+    position: relative;
+}
+
+#p30-intro-colors-lifestyle-container>div:nth-child(1) {
+    z-index: 5;
+}
+
+#p30-intro-colors-lifestyle-container>div:nth-child(2) {
+    z-index: 6;
+}
+
+#p30-intro-colors-lifestyle-container>div:nth-child(3) {
+    z-index: 7;
+}
+
+#p30-intro-colors-lifestyle-container>div:nth-child(4) {
+    z-index: 8;
+}
+
+#p30-intro-colors-lifestyle-container>div:nth-child(5) {
+    z-index: 9;
+}
+
+#p30-intro-colors-showcase {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    z-index: 10;
+    content: "";
+    background: rgb(220,200,240);
+    overflow: hidden;
+    margin: 30px 15px 30px 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#p30-intro-colors-showcase-container {
+    width: 10vw;
+    position: absolute;
+    top: unset;
+    height: calc(100vh - 325px);
+    width: calc((100vh - 325px) / 2);
+    left: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+
+#p30-intro-colors-number {
+    position: absolute;
+    margin-bottom: 0;
+    color: rgba(2, 0, 0, 0.09);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.5em;
+    z-index: 20;
+    height: 1.5em;
+}
+
+#p30-intro-colors-number>div {
+    height: 1.5em;
+    line-height: 1.5em;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+#p30-intro-colors-number-switch>div {
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 1s cubic-bezier(0.77, 0, 0.175, 1);
+    display: block;
+    -webkit-transform: translate(0, 1.5em);
+    transform: translate(0, 1.5em);
+}
+
+#p30-intro-colors-number-switch>div>div {
+    height: 1.5em;
+}
+
+#p30-intro-colors-caption {
+    position: absolute;
+    line-height: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    z-index: 20;
+    text-align: right;
+}
+
+#p30-intro-colors-caption span {
+    -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: -webkit-transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    display: block;
+    -webkit-transform: translate(0, 1.5em);
+    transform: translate(0, 1.5em);
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    #p30-intro-colors {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    #p30-intro-colors .p30-component-description {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 1;
+        order: 1;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        width: 50vw;
+        position: static;
+        /*display: -webkit-box;*/
+        /*display: -ms-flexbox;*/
+        /*display: flex;*/
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 0 0 0 -10vw;
+        padding: calc(7.6vw + 90px) 4vw 90px 20vw;
+    }
+    #p30-intro-colors .p30-component-description .p30-h2 {
+        /* position: absolute;
+  left: 4vw;
+  top: 4vw */
+        /* padding-top: 65px; */
+    }
+    #p30-intro-colors-showcase {
+        width: 56vw;
+        margin: 7.6vw 0 0 0;
+    }
+    #p30-intro-colors-showcase-container {
+        top: 90px;
+    }
+    #p30-intro-colors-number {
+        left: 10vw;
+        bottom: 2vw;
+    }
+    #p30-intro-colors-caption {
+        position: absolute;
+        left: 20vw;
+        bottom: 2vw;
+        text-align: left;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) {
+    #p30-intro-colors-showcase-container {
+        top: unset;
+    }
+    #p30-intro-colors .p30-component-description {
+        margin: 0;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    #p30-intro-colors .p30-component-description .p30-h2 {
+        width: 25vw;
+        /*top: 8vw*/
+    }
+    #p30-intro-colors-number {
+        bottom: 65px;
+    }
+    #p30-intro-colors-caption {
+        bottom: 65px;
+    }
+    #p30-intro-colors .p30-component-description {
+        padding: 65px 4vw;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    #p30-intro-colors .p30-component-description .p30-p {
+        margin-top: auto;
+    }
+    #p30-intro-colors-showcase {
+        margin: 0;
+    }
+    #p30-intro-colors-number {
+        bottom: 65px;
+        width: auto;
+        left: 4vw;
+    }
+    #p30-intro-colors-caption {
+        position: absolute;
+        left: 8vw;
+        bottom: 65px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.p30-intro-colors-slide1 #p30-intro-colors-lifestyle-container {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.p30-intro-colors-slide1 #p30-intro-colors-lifestyle-container>div:nth-child(1) {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.p30-intro-colors-slide2 #p30-intro-colors-lifestyle-container {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+}
+
+.p30-intro-colors-slide2 #p30-intro-colors-lifestyle-container>div:nth-child(1) {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.p30-intro-colors-slide2 #p30-intro-colors-lifestyle-container>div:nth-child(2) {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.p30-intro-colors-slide3 #p30-intro-colors-lifestyle-container {
+    -webkit-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+}
+
+.p30-intro-colors-slide3 #p30-intro-colors-lifestyle-container>div:nth-child(2) {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.p30-intro-colors-slide3 #p30-intro-colors-lifestyle-container>div:nth-child(3) {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.p30-intro-colors-slide4 #p30-intro-colors-lifestyle-container {
+    -webkit-transform: translate(0, -300%);
+    transform: translate(0, -300%);
+}
+
+.p30-intro-colors-slide4 #p30-intro-colors-lifestyle-container>div:nth-child(3) {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.p30-intro-colors-slide4 #p30-intro-colors-lifestyle-container>div:nth-child(4) {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.p30-intro-colors-slide5 #p30-intro-colors-lifestyle-container {
+    -webkit-transform: translate(0, -400%);
+    transform: translate(0, -400%);
+}
+
+.p30-intro-colors-slide5 #p30-intro-colors-lifestyle-container>div:nth-child(4) {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.p30-intro-colors-slide5 #p30-intro-colors-lifestyle-container>div:nth-child(5) {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.p30-intro-colors-slide1 #p30-intro-colors-showcase-container>div:nth-child(1),
+.p30-intro-colors-slide2 #p30-intro-colors-showcase-container>div:nth-child(2),
+.p30-intro-colors-slide3 #p30-intro-colors-showcase-container>div:nth-child(3),
+.p30-intro-colors-slide4 #p30-intro-colors-showcase-container>div:nth-child(4),
+.p30-intro-colors-slide5 #p30-intro-colors-showcase-container>div:nth-child(5) {
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+@supports ((-webkit-clip-path: inset(0 0 0 0)) or (clip-path: inset(0 0 0 0))) {
+    .p30-intro-colors-slide1 #p30-intro-colors-showcase-container>div:nth-child(1),
+    .p30-intro-colors-slide2 #p30-intro-colors-showcase-container>div:nth-child(2),
+    .p30-intro-colors-slide3 #p30-intro-colors-showcase-container>div:nth-child(3),
+    .p30-intro-colors-slide4 #p30-intro-colors-showcase-container>div:nth-child(4),
+    .p30-intro-colors-slide5 #p30-intro-colors-showcase-container>div:nth-child(5) {
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.p30-intro-colors-slide1 #p30-intro-colors-caption span,
+.p30-intro-colors-slide1 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.p30-intro-colors-slide2 #p30-intro-colors-caption span,
+.p30-intro-colors-slide2 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, -1.5em);
+    transform: translate(0, -1.5em);
+}
+
+.p30-intro-colors-slide3 #p30-intro-colors-caption span,
+.p30-intro-colors-slide3 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, -3em);
+    transform: translate(0, -3em);
+}
+
+.p30-intro-colors-slide4 #p30-intro-colors-caption span,
+.p30-intro-colors-slide4 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, -4.5em);
+    transform: translate(0, -4.5em);
+}
+
+.p30-intro-colors-slide5 #p30-intro-colors-caption span,
+.p30-intro-colors-slide5 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, -6em);
+    transform: translate(0, -6em);
+}
+.p30-intro-colors-slide6 #p30-intro-colors-caption span,
+.p30-intro-colors-slide6 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, -7.5em);
+    transform: translate(0, -7.5em);
+}
+.p30-intro-colors-slide7 #p30-intro-colors-caption span,
+.p30-intro-colors-slide7 #p30-intro-colors-number-switch>div {
+    -webkit-transform: translate(0, -9em);
+    transform: translate(0, -9em);
+}
+
+#p30-intro-colors-lifestyle-black {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/lifestyle-1.jpg);
+}
+
+#p30-intro-colors-lifestyle-aurora {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/lifestyle-2.png);
+}
+
+#p30-intro-colors-lifestyle-blue {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/lifestyle-3.png);
+}
+
+#p30-intro-colors-lifestyle-white {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/lifestyle-2.png);
+}
+
+#p30-intro-colors-lifestyle-orange {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/lifestyle-4.png);
+}
+
+#p30-intro-colors-black {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/01-fallback.png);
+}
+
+#p30-intro-colors-aurora {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/02-fallback.png);
+}
+
+#p30-intro-colors-blue {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/03-fallback.png);
+}
+
+#p30-intro-colors-white {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/04-fallback.png);
+}
+
+#p30-intro-colors-orange {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/05-fallback.png);
+}
+#p30-intro-colors-mysticblue {
+    background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-color/06-fallback.png);
+}
+#p30-intro-colors-mistylavender {
+    background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-color/07-fallback.png);
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    #p30-intro-colors-black {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/01-fallback-xs.png);
+    }
+    #p30-intro-colors-aurora {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/02-fallback-xs.png);
+    }
+    #p30-intro-colors-blue {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/03-fallback-xs.png);
+    }
+    #p30-intro-colors-white {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/04-fallback-xs.png);
+    }
+    #p30-intro-colors-orange {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/05-fallback-xs.png);
+    }
+}
+
+@supports (not (-ms-ime-align: auto)) and ((mask-size: 100% 100%) or (-webkit-mask-size: 100% 100%)) {
+    #p30-intro-colors-showcase-container {
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/mask.png);
+    }
+    #p30-intro-colors-black {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/01.jpg);
+    }
+    #p30-intro-colors-aurora {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/02.jpg);
+    }
+    #p30-intro-colors-blue {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/03.jpg);
+    }
+    #p30-intro-colors-white {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/04.jpg);
+    }
+    #p30-intro-colors-orange {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/05.jpg);
+    }
+    #p30-intro-colors-mysticblue {
+        background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-color/06.jpg);
+    }
+    #p30-intro-colors-mistylavender {
+        background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-color/07.jpg);
+    }
+    @media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+        #p30-intro-colors-showcase-container {
+            -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/mask.png);
+            -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/mask.png);
+            mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/mask.png);
+        }
+        #p30-intro-colors-black {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/01.jpg);
+        }
+        #p30-intro-colors-aurora {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/02.jpg);
+        }
+        #p30-intro-colors-blue {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/03.jpg);
+        }
+        #p30-intro-colors-white {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/04.jpg);
+        }
+        #p30-intro-colors-orange {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/05.jpg);
+        }
+    }
+    @media (min-device-pixel-ratio: 1.5),
+    (min-width: 769px) {
+        #p30-intro-colors-black {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/01@2x.jpg);
+        }
+        #p30-intro-colors-aurora {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/02@2x.jpg);
+        }
+        #p30-intro-colors-blue {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/03@2x.jpg);
+        }
+        #p30-intro-colors-white {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/04@2x.jpg);
+        }
+        #p30-intro-colors-orange {
+            background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-color/05@2x.jpg);
+        }
+        #p30-intro-colors-mysticblue {
+            background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-color/06@2x.jpg);
+        }
+        #p30-intro-colors-mistylavender {
+            background-image: url(/content/dam/huawei-cbg-site/en/mkt/pdp/phones/p30-pro/img/intro-color/07@2x.jpg);
+        }
+    }
+}
+
+
+/*zoom-moon*/
+
+#p30-photo-sensor {
+    background: #fff;
+}
+
+.p30-photo-zoom-phone {
+    width: calc(40vh * 2.13);
+    height: 40vh;
+    margin: 0 auto;
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-zoom/pic_superZoomPhone_md@2x.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    will-change: transform;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#p30-photo-zoom-phone-mask {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.p30-photo-zoom-moon-super {
+    -webkit-transform: scale(1) !important;
+    transform: scale(1) !important;
+}
+
+.p30-photo-zoom-moon-ten-times {
+    -webkit-transform: scale(0.2) !important;
+    transform: scale(0.2) !important;
+}
+
+.moon-animated {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.moon-num-animated {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#p30-photo-zoom-number.animateTop {
+    -webkit-transform: translate(0, -54vh) !important;
+    transform: translate(0, -54vh) !important;
+}
+
+#p30-photo-zoom-slider-mask.animateTop {
+    -webkit-transform: translate(0, -100%) !important;
+    transform: translate(0, -100%) !important;
+}
+
+#p30-photo-zoom-moon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 75vh;
+    height: 75vh;
+    z-index: 30;
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+
+#p30-photo-zoom-title {
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform-origin: center;
+}
+
+#p30-photo-zoom-slider {
+    width: 50px;
+    height: 60vh;
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 30;
+}
+
+#p30-photo-zoom-number {
+    right: 84vw;
+    bottom: 10.5vh;
+    position: absolute;
+    z-index: 40;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+#p30-photo-zoom-moon {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-zoom/moon.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) or (min-width: 769px) {
+    #p30-photo-zoom-moon {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-zoom/moon@2x.jpg);
+    }
+}
+
+
+/*sticky*/
+
+.p30-sticky {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.p30-sticky:before,
+.p30-sticky:after {
+    content: "";
+    display: table;
+}
+
+.p30-sticky-specail {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65px;
+    height: calc(100vh - 65px);
+    text-align: center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    background-color: #cbefff;
+    overflow: hidden;
+}
+
+.p30-sticky-specail:before,
+.p30-sticky-specail:after {
+    content: "";
+    display: table;
+}
+
+
+/*section-left-right start*/
+
+.p30-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65px;
+}
+
+.p30-component-figure-content {
+    position: relative;
+    width: 46vw;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.p30-component-figure-wrap-before,
+.p30-component-figure-wrap-after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.p30-component-figure-wrap-before img,
+.p30-component-figure-wrap-after img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    max-width: unset;
+    right: 0;
+    -o-object-fit: unset;
+    object-fit: unset;
+}
+
+.p30-component-figure-left {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.p30-component-figure-left .p30-component-figure-wrap-after,
+.p30-component-figure-left .p30-component-figure-wrap-before,
+.p30-component-figure-left .p30-component-figure-wrap-after img,
+.p30-component-figure-left .p30-component-figure-wrap-before img {
+    left: 0;
+    right: unset;
+}
+
+.p30-component-figure-left .p30-component-figure-wrap-after {
+    width: 0px;
+    z-index: 1;
+}
+
+.p30-fullscreen-photo-left-right .p30-component-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.p30-fullscreen-photo-left-right .p30-component-figure {
+    width: 50vw;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.p30-fullscreen-photo-left-right [class^="p30-component-figure-img"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.p30-container .p30-component-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.p30-container .p30-component-figure {
+    width: 50vw;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    max-width: unset;
+}
+
+[class^="p30-component-figure-img"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.p30-component-figure-left .p30-component-figure-img {
+    background-position: left;
+}
+
+.p30-component-figure-right .p30-component-figure-img {
+    background-position: right;
+}
+
+.p30-img-bg-super-low-light-before {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superLowLight_before_md.jpg);
+}
+
+.p30-img-bg-super-low-light-after {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superLowLight_after_md.jpg);
+}
+
+.p30-img-bg-leica-style-before {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_leicaStyle_before_md.jpg);
+}
+
+.p30-img-bg-leica-style-after {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_leicaStyle_after_md.jpg);
+}
+
+.p30-img-bg-super-hdr-before {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superHdr_before_md.jpg);
+}
+
+.p30-img-bg-super-hdr-after {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superHdr_after_md.jpg);
+}
+
+.p30-img-bg-super-silky-mode-after {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superSilkyMode_md.jpg);
+}
+
+.p30-img-explore-in-detail {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_exploreInDetail_md.jpg);
+}
+
+.p30-img-selfie-expert {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_selfieExpert_md.jpg);
+}
+
+.p30-img-bg-a-redefined-perspective {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aRedefinedPerspective_md.jpg);
+}
+
+.p30-img-telephoto-camera-video {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/video/monkey-video-poster.jpg);
+}
+
+.p30-a-redefined-perspective-section {
+    width: 100%;
+    height: calc((100vh - 65px) * 1.8);
+}
+
+.p30-a-redefined-perspective-section .p30-component-description {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+}
+
+.p30-a-redefined-perspective-section .p30-component-figure-right {
+    right: 0;
+    left: auto;
+    position: absolute;
+}
+
+
+/*
+  .p30-a-redefined-perspective-section #bg-scroll-to-full {
+    max-width: none;
+    width: 100vw;
+    height: calc(100vh - 65px);
+    margin: 0px;
+    padding-top: calc((100vh - 65px - 46vw) / 2);
+    padding-right: 4vw;
+    padding-bottom: calc((100vh - 65px - 46vw) / 2);
+    padding-left: 50vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  */
+
+.p30-a-redefined-perspective-section #bg-scroll-to-full {
+    max-width: none;
+    width: 46vw;
+    height: 46vw;
+    margin: 0;
+    right: 3vw;
+}
+
+#p30-a-redefined-perspective-figure .p30-component-figure-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aRedefinedPerspective_md.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#p30-low-light {
+    margin-top: 130px;
+}
+
+@-webkit-keyframes fullToZero {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes fullToZero {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes zoreToFull {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes zoreToFull {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-component-figure-left .p30-component-figure-content {
+        margin: 0;
+    }
+    .p30-fullscreen-photo-left-right .p30-component-description {
+        width: auto;
+    }
+    .p30-fullscreen-photo-left-right .p30-component-figure {
+        width: auto;
+    }
+    .p30-container .p30-component-description {
+        width: auto;
+    }
+    .p30-container .p30-component-figure {
+        width: auto;
+    }
+    .p30-component-figure-content {
+        height: 100vw;
+        width: 100vw;
+        /* padding-bottom: 30px; */
+        margin: 0;
+    }
+    #p30-photo-zoom-content {
+        height: 100vh;
+        margin-bottom: 100vh;
+        background-color: #000000;
+    }
+    .p30-fullscreen-1 {
+        height: calc(100vh - 44px);
+    }
+    .p30-fullscreen-photo-left-right .p30-img-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .p30-container .p30-img-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .p30-component-figure-wrap-before,
+    .p30-component-figure-wrap-after {
+        margin: 0;
+        width: 100%;
+    }
+    .p30-container .p30-component-figure,
+    .p30-component-figure-before {
+        margin: 30px;
+        -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+    }
+    .p30-fullscreen-photo-left-right .p30-component-figure,
+    .p30-component-figure-before {
+        margin: 30px;
+        -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+    }
+    .p30-component-figure-left .p30-component-figure-wrap-before,
+    .p30-component-figure-left .p30-component-figure-wrap-after {
+        margin: 0;
+    }
+    .p30-container .p30-component-figure {
+        margin: 0;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    .p30-component-figure-content {
+        height: 46vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    #p30-a-redefined-perspective-figure {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16 / 9) {
+    .p30-container .p30-component-figure {
+        width: 50vw;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .p30-container .p30-component-figure.p30-component-figure-left {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .p30-fullscreen-photo-left-right .p30-component-figure {
+        width: 50vw;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .p30-fullscreen-photo-left-right .p30-component-figure.p30-component-figure-left {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .p30-component-figure-content {
+        height: 70vh;
+        width: 70vh;
+        display: block;
+        -webkit-box-align: unset;
+        -ms-flex-align: unset;
+        align-items: unset;
+        margin: 0;
+    }
+    .p30-component-figure-left {
+        padding-left: 8vw;
+        padding-right: unset;
+    }
+    .p30-component-figure-wrap-before,
+    .p30-component-figure-wrap-after {
+        width: 100%;
+        margin: 0;
+    }
+    .p30-component-figure-left .p30-component-figure-wrap-before,
+    .p30-component-figure-left .p30-component-figure-wrap-after {
+        margin-left: 0;
+    }
+    /*
+    .p30-a-redefined-perspective-section #bg-scroll-to-full {
+      width: 100vw;
+      height: calc(100vh - 65px);
+      margin: 0;
+      padding-right: 8vw;
+      padding-left: calc(92vw - 70vh);
+      padding-top: calc(15vh - 32.5px);
+      padding-bottom: calc(15vh - 32.5px);
+    }
+    */
+    .p30-a-redefined-perspective-section #bg-scroll-to-full {
+        width: 70vh;
+        max-width: none;
+        height: 70vh;
+        padding: 0px;
+        margin: 0px;
+        right: 8vw;
+    }
+    #p30-a-redefined-perspective-figure {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*section-left-right end */
+
+
+/*fade-out*/
+
+.p30-fade-out-zIndex {
+    position: relative;
+    z-index: 30;
+}
+
+
+/*p30-super-zoom*/
+
+.p30-super-zoom {
+    background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_superZoom_md.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media (max-width: 1024px) and (max-aspect-ratio: 1 / 1) {
+    .p30-super-zoom {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_superZoom_xs.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-max-device-pixel-ratio: 1.4) {
+    .p30-super-zoom {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_superZoom_md.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-super-zoom {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_superZoom_md@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 4 / 3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    .p30-super-zoom {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_superZoom_xlg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 4 / 3) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-super-zoom {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_superZoom_xlg@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+}
+
+.p30-super-zoom .p30-component-figure {
+    width: 50vw;
+}
+
+.p30-super-zoom .p30-component-description {
+    color: white;
+    max-width: calc(50vw - 16vw);
+}
+
+.p30-fade-out-container {
+    background-color: #000000 !important;
+}
+
+
+/*p30-hardware-upgrade*/
+
+.p30-hardware-upgrade {
+    background-color: #000000;
+}
+
+.p30-hardware-upgrade .p30-component-figure {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding-top: 0;
+}
+
+.p30-hardware-upgrade .p30-component-description {
+    color: white;
+}
+
+.p30-cameraFunction-list {
+    background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_functionList_xlg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 130px;
+}
+
+@media (max-width: 1024px) and (max-aspect-ratio: 1 / 1) {
+    .p30-cameraFunction-list {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_functionList_xs.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-max-device-pixel-ratio: 1.4) {
+    .p30-cameraFunction-list {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_functionList_md.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-cameraFunction-list {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_functionList_md@2x.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 4 / 3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    .p30-cameraFunction-list {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_functionList_xlg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 4 / 3) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-cameraFunction-list {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_functionList_xlg@2x.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/*section-p30-section-title1*/
+
+#p30-blockt1-trigger {
+    position: relative;
+    top: 300vh;
+}
+
+.p30-section-title1 .p30-component-tile {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.p30-section-title1 .p30-h2 {
+    width: 70%;
+}
+
+.p30-section-title-area .p30-component-tile.p30-block {
+    opacity: 1;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.p30-section-title1 .p30-component-figure {
+    overflow: visible;
+}
+
+#p30-backgroundt1 {
+    background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_camerSystem_xlg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 99.9%;
+}
+
+@media (max-width: 1024px) and (max-aspect-ratio: 1 / 1) {
+    #p30-backgroundt1 {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_camerSystem_xs.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-max-device-pixel-ratio: 1.4) {
+    #p30-backgroundt1 {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_camerSystem_md.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #p30-backgroundt1 {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_camerSystem_md@2x.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    #p30-backgroundt1 {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_camerSystem_xlg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #p30-backgroundt1 {
+        background: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_camerSystem_xlg@2x.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.p30-component-figure-picBg {
+    transform-origin: 12% 40%;
+}
+
+
+/*p30-section-title2*/
+
+.p30-section-title2 .p30-section-title::after,
+.p30-section-title2 .p30-section-title::before {
+    background: #000000;
+}
+
+.p30-section-title2 .p30-component-tile {
+    color: black;
+}
+
+.p30-section-title2 .p30-component-figure {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+
+.p30-telephoto-camera-video .p30-component-figure {
+    opacity: 0;
+}
+
+.p30-img-telephoto-camera-video {}
+
+
+/*p30-section-title3*/
+
+.p30-section-title3 .p30-fullscreen-background {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    z-index: -1;
+}
+
+.p30-section-title3 .p30-fullscreen-background img {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.p30-curved-body {
+    padding: 0;
+}
+
+
+/*compact-design*/
+
+.compact-design {
+    /*overflow: hidden;*/
+}
+
+.p30-idDesign-bgwarpper {
+    position: relative;
+    transform: translate(0%, 60%) scale(3.2);
+}
+
+#p30-idDesign-description {
+    position: absolute;
+    bottom: 0;
+}
+
+.p30-idDesign-bgwarpper.p30-scale {
+    transform: translate(0%, 50%) scale(0.5);
+}
+
+.p30-idDesignbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.p30-idDesignbg-scale {
+    position: absolute;
+    height: 88.2%;
+    top: 1.37%;
+    left: 34.3%;
+}
+
+.p30-idDesign-bgwarpper,
+.p30-idDesign-bgwarpper img,
+.p30-idDesign-bgwarpper picture {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .p30-idDesignbg-scale {
+        height: 87.47%;
+        top: 1.99%;
+        left: 44.27%;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16/9) {
+    .p30-idDesignbg-scale:not(.is-ie) {
+        position: absolute;
+        height: 88.15%;
+        top: 1.38%;
+        left: 29.05%;
+    }
+}
+
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 16/9) {
+    .p30-idDesignbg-scale {
+        position: absolute;
+        height: 88.2%;
+        top: 1.37%;
+        left: 34.3%;
+    }
+}
+
+.p30-compactDesign-bgwarpper {
+    height: 100%;
+    width: auto;
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.p30-compactDesignbg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.p30-background {
+    position: static;
+    opacity: 0;
+    width: 100%;
+    transform: translateX(0);
+    height: auto;
+}
+
+.p30-compactDesignbg.p30-background {
+    height: 100%;
+    width: auto;
+}
+
+.p30-idDesignbg .p30-background {
+    position: static;
+    opacity: 0;
+    height: 100%;
+    transform: translateX(0);
+    height: auto;
+}
+
+.p30-compactDesignbg-scale {
+    position: absolute;
+    width: 49.91%;
+    top: 56.26%;
+    left: 7.6%;
+}
+
+.p30-compactDesign-bgwarpper.p30-scale {
+    transform: translate(42%, -57%) scale(2.2);
+    bottom: auto !important;
+}
+
+@media (max-aspect-ratio: 1/1) {}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16/9) {
+    .p30-compactDesignbg-scale:not(.is-ie) {
+        position: absolute;
+        width: 66.53%;
+        top: 56.26%;
+        left: 0.02%;
+    }
+}
+
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 16/9) {
+    .p30-compactDesignbg-scale {
+        position: absolute;
+        width: 49.91%;
+        top: 56.26%;
+        left: 7.6%;
+    }
+}
+
+#p30-compactDesign-trigger {
+    position: relative;
+    top: 100vh;
+}
+
+.p30-compactDesign-bgwarpper,
+.p30-compactDesign-bgwarpper img,
+.p30-compactDesign-bgwarpper picture {
+    /*-webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);*/
+}
+
+
+/*p30-section-title4*/
+
+#p30-cpu-video,
+#p30-cpu-mob-video {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    margin-top: 1px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.p30-980icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 8%;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.p30-block {
+    opacity: 1;
+}
+
+.p30-980icon img {
+    width: 100%;
+}
+
+.p30-component-description-center.p30-section-title4 {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /*max-width: 75vw;*/
+}
+
+.p30-section-title4 .p30-h2 {
+    margin: 0 0 0.5em 0;
+}
+
+.p30-section-title4 .p30-p {
+    margin: 0 0 3vw 0 !important;
+}
+
+.p30-section-title4 .p30-section-title4-details .p30-h2 {
+    margin: 0;
+}
+
+.p30-section-title4 .p30-section-title4-details .p30-p {
+    margin: 0 !important;
+}
+
+.p30-section-title4-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.p30-powerSpeed {
+    position: relative;
+}
+
+.p30-powerSpeed h3 {
+    margin: 0;
+}
+
+.p30-powerSpeed-split {
+    width: 1%;
+    height: 70%;
+    background: #000000;
+}
+
+
+/*communication*/
+
+.p30-communication {
+    max-width: 100%;
+}
+
+.p30-communication-description {
+    max-width: 50vw;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    .p30-communication-description {
+        max-width: 75vw;
+        width: 100%;
+    }
+    .p30-communication {
+        width: 75vw;
+    }
+}
+
+.p30-communication-description h3 {
+    margin: 0;
+}
+
+.p30-communication-img {
+    width: 50vw;
+    height: calc(50vw * 0.467);
+    margin: 0 auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    will-change: transform;
+}
+
+.p30-communication-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_communication_md.jpg);
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    .p30-communication-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_communication_xs.jpg);
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-communication-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_communication_md@2x.jpg);
+    }
+}
+
+
+/*speedyRecovery*/
+
+.p30-batteryPart {
+    padding-top: 120px;
+}
+
+.p30-speedyRecovery {
+    padding: 0;
+    max-width: 100vw;
+    top: 30vh;
+    height: 70vh;
+}
+
+.p30-cspeedyRecovery-des {
+    /*flex-grow: 0;*/
+    text-align: center;
+    max-width: 50vw;
+    margin: 0 auto;
+    padding: 30px 0 60px 0;
+}
+
+.p30-batteryWrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /*flex-grow: 2;*/
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.p30-speedyRecovery-battery-after,
+.p30-speedyRecovery-battery {
+    width: 41.04vw;
+    height: calc(41.04vw * 0.11);
+    margin: 0 auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: 50% 50%;
+    mask-position: 50% 50%;
+    will-change: transform;
+}
+
+.p30-speedyRecovery-battery-afterWarpper {
+    width: 41.04vw;
+    height: calc(41.04vw * 0.11);
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.p30-speedyRecovery-battery-after {
+    width: 0%;
+    position: absolute;
+    left: 0;
+    width: 0%;
+    background-position: left;
+    -webkit-mask-position: left;
+    mask-position: left;
+    -webkit-transition-property: -webkit-width;
+    transition-property: -webkit-width;
+    -webkit-transition-property: width;
+    transition-property: width;
+    transition-property: width, -webkit-width;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.p30-speedyRecovery-battery-after.p30-fullBattery {
+    width: 100%;
+}
+
+.p30-speedyRecovery-battery {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01.png);
+}
+
+@supports (not (-ms-ime-align: auto)) and ((mask-size: 100% 100%) or (-webkit-mask-size: 100% 100%)) {
+    .p30-speedyRecovery-battery {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01.jpg);
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_mask.png);
+    }
+}
+
+.p30-speedyRecovery-battery-after {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_after.png);
+}
+
+@supports (not (-ms-ime-align: auto)) and ((mask-size: 100% 100%) or (-webkit-mask-size: 100% 100%)) {
+    .p30-speedyRecovery-battery-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_after.jpg);
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery01_mask.png);
+    }
+}
+
+.p30-speedyRecovery-number {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 15vh);
+    transform: translate(-50%, 15vh);
+    width: 100%;
+}
+
+.p30-speedyRecovery-phone {
+    width: 74.32vw;
+    height: calc(74.32vw * 0.082);
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
+
+.p30-speedyRecovery-phone {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery02_md.jpg);
+}
+
+.p30-speedyRecovery-phone {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery02_md.jpg);
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    .p30-speedyRecovery-phone {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery02_xs.jpg);
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-speedyRecovery-phone {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_speedyRecovery02_md@2x.jpg);
+    }
+}
+
+
+/*p30-wirelessPower*/
+
+.p30-wirelessPower .p30-component-description {
+    max-width: 34vw;
+}
+
+.p30-wirelessPower .p30-component-figure {
+    padding-right: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.p30-power-animation {
+    width: 100%;
+    position: relative;
+}
+
+.p30-component-figure img.p30-power-phonebg {
+    opacity: 0;
+    width: 80%;
+}
+
+.p30-wirelessPower .p30-component-figure img {
+    max-width: 100%;
+}
+
+.p30-wirelessPower-padbg,
+.p30-sharePhone-phonebg {
+    opacity: 0;
+}
+
+.p30-component-figure img.p30-wiredPower-screen {
+    z-index: 1;
+}
+
+.p30-component-figure img.p30-wirelessPower-pad,
+.p30-component-figure img.p30-sharePhone-phone {
+    z-index: -2;
+}
+
+.p30-component-figure img.p30-wirelessPower-shadow {
+    z-index: 3;
+}
+
+.p30-component-figure img.p30-sharePhone-shadow {
+    z-index: -1;
+}
+
+.p30-component-figure img.p30-power-phone,
+.p30-component-figure img.p30-wiredPower-screen,
+.p30-component-figure img.p30-wirelessPower-screen,
+.p30-wirelessPower-wrapper,
+.p30-sharePhone-wrapper {
+    position: absolute;
+    width: 80%;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.p30-component-figure .p30-wirelessPower-wrapper,
+.p30-component-figure .p30-sharePhone-wrapper {
+    -webkit-transform: translate(0%, 30%);
+    transform: translate(0%, 30%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.p30-component-figure img.p30-wiredPower-screen,
+.p30-component-figure img.p30-wirelessPower-screen,
+.p30-component-figure img.p30-wirelessPower,
+.p30-component-figure img.p30-wirelessPower-shadow,
+.p30-component-figure img.p30-sharePhone-shadow {
+    opacity: 0;
+}
+
+.p30-component-figure img.p30-wirelessPower-shadow,
+.p30-component-figure img.p30-sharePhone-shadow {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@supports (not (-ms-ime-align: auto)) and ((mask-size: 100% 100%) or (-webkit-mask-size: 100% 100%)) {
+    .p30-power-phonebg,
+    .p30-power-phone,
+    .p30-sharePhone-phone {
+        -webkit-mask-size: contain;
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_phone_mask.png);
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_phone_mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_phone_mask.png);
+    }
+    .p30-wiredPower-screen,
+    .p30-wirelessPower-screen {
+        -webkit-mask-size: contain;
+        -webkit-mask-box-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_screen_mask.png);
+        -webkit-mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_screen_mask.png);
+        mask-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_screen_mask.png);
+    }
+}
+
+.p30-fastCable-wrapper {
+    position: absolute;
+    width: 30%;
+    top: 56.9%;
+    left: 70.2%;
+    opacity: 0;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.p30-component-figure img.p30-wiredPower-fastCablebg {
+    opacity: 0;
+}
+
+.p30-component-figure img.p30-wiredPower-fastCable {
+    z-index: 2;
+}
+
+.p30-component-figure img.p30-wiredPower-fastCable,
+.p30-component-figure img.p30-wiredPower-fastCablepin,
+.p30-component-figure img.p30-wirelessPower-pad,
+.p30-component-figure img.p30-wirelessPower-shadow,
+.p30-component-figure img.p30-sharePhone-phone,
+.p30-component-figure img.p30-sharePhone-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.p30-wiredPower-fastCable {
+    -webkit-transition-property: all, -webkit-transform;
+    transition-property: all, -webkit-transform;
+    -webkit-transition-property: all, -webkit-transform;
+    transition-property: all, -webkit-transform;
+    transition-property: all;
+    transition-property: all, -webkit-transform;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+
+/*power*/
+
+.p30-first-description {
+    margin-top: -80vh;
+}
+
+
+/*animatedSlider1*/
+
+.p30-power-animation.animatedSlider1 .p30-fastCable-wrapper {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+}
+
+.p30-power-animation.animatedSlider1 .p30-wiredPower-screen {
+    opacity: 1;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+.p30-power-animation.animatedSlider1 .p30-fastCable-wrapper .p30-wiredPower-fastCable {
+    opacity: 1;
+    -webkit-transform: translate(-6%, -6%);
+    transform: translate(-6%, -6%);
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+
+/*animatedSlider2*/
+
+.p30-power-animation.animatedSlider2 .p30-wirelessPower-screen {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.p30-power-animation.animatedSlider2 .p30-wirelessPower-shadow {
+    opacity: 1;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.p30-power-animation.animatedSlider2 .p30-wirelessPower-wrapper {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+}
+
+.p30-power-animation.animatedSlider2 .p30-wiredPower-screen {
+    opacity: 0;
+}
+
+
+/*animatedSlider3*/
+
+.p30-power-animation.animatedSlider3 .p30-wirelessPower-screen {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.p30-power-animation.animatedSlider3 .p30-sharePhone-shadow {
+    opacity: 1;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+.p30-power-animation.animatedSlider3 .p30-sharePhone-wrapper {
+    opacity: 1;
+    -webkit-transform: translate(0%, 8%);
+    transform: translate(0%, 8%);
+}
+
+
+/*eglamorous crystal*/
+
+.p30-accessorizebg {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*p30-extraProtection*/
+
+.p30-extraProtection {
+    max-width: 84vw;
+    width: 100%;
+}
+
+.p30-extraProtection-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 84vw;
+}
+
+.p30-extraProtection-description-left,
+.p30-extraProtection-description-right {
+    width: 50%;
+}
+
+.p30-extraProtection-description-left h3 {
+    text-align: left;
+}
+
+.p30-extraProtection-more {
+    white-space: nowrap;
+    padding-top: 65px;
+    overflow-x: hidden;
+}
+
+.p30-extraProtection-details {
+    width: 40vw;
+    display: inline-block;
+    margin-right: 3vw;
+}
+
+@media (min-aspect-ratio: 1 / 1) {
+    .p30-extraProtection-details {
+        height: 46vw;
+        display: inline-block;
+        margin-right: 3vw;
+    }
+}
+
+@media (min-aspect-ratio: 16 / 9) and (min-width: 769px) {
+    .p30-extraProtection-details {
+        height: 70vh;
+        width: 70vh;
+        display: inline-block;
+        margin-right: 3vw;
+    }
+    #p30-intro-colors .p30-component-description {
+        padding: 65px 8vw;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #p30-intro-colors-number {
+        left: 8vw;
+    }
+    #p30-intro-colors-caption {
+        left: 12vw;
+    }
+    #p30-intro-colors-showcase {
+        width: 50vw;
+    }
+}
+
+.p30-extraProtection-details img {
+    width: 100%;
+}
+
+
+/*p30-family*/
+
+.p30-family {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.p30-family-title {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+.p30-family-more {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p30-family-details {
+    width: 30%;
+    display: inline-block;
+    margin: 0 3vw;
+    text-align: center;
+}
+
+.p30-family-details img {
+    width: 100%;
+    padding: 2vw 0;
+}
+
+
+/*left2right start*/
+
+@media (min-width: 769px) and (min-aspect-ratio: 16 / 9) {
+    .p30-component-figure-left,
+    .p30-component-figure-right {
+        padding-bottom: 65px;
+    }
+}
+
+.p30-bg-full-screen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.p30-left-bg-white-opacity {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.p30-left-bg-white-opacity .p30-component-description {
+    margin: 0;
+    width: 40vw;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    padding-right: 0;
+}
+
+#p30-stableVideosContainer .p30-fullscreen-1 {
+    position: relative;
+}
+
+#p30-stableVideosContainer #p30-stableVideos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#p30-stableVideosContainer #p30-stableVideosCanvas {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#p30-stableVideosContainer #p30-stableVideosCanvas canvas {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.p30-top-bottom .p30-fullscreen-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p30-top-bottom img {
+    max-width: 50vw;
+}
+
+.p30-top-bottom .p30-p {
+    width: 100%;
+}
+
+#integratedAIVideoContainer .p30-component-figure-wrap-after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.p30-img-amplify-the-sound {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_amplifyTheSound_md.jpg);
+}
+
+.p30-img-ready-for-exploration {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_readyForExploration_md.jpg);
+}
+
+.p30-img-ai-safeguard {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/p30_border@2x.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#p30-motion-sensing-game {
+    background-color: #000;
+}
+
+#p30-free-your-eyes {
+    background-color: #fff;
+}
+
+#p30-share-in-seconds {
+    background-color: #fff;
+}
+
+#p30-share-in-seconds-white-bg {
+    height: 100vh;
+    margin: 0;
+    width: 40vw;
+    background-color: #fff;
+    padding-right: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+#p30-motion-sensing-game .p30-component-tile,
+#p30-free-your-eyes .p30-component-tile,
+#p30-share-in-seconds .p30-component-tile {
+    height: auto;
+}
+
+#p30-motion-sensing-game-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_md.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: calc(100vh - 64px);
+}
+
+@media (max-width: 1024px) and (max-aspect-ratio: 1 / 1) {
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_xs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: calc(100vh - 44px);
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-max-device-pixel-ratio: 1.4) {
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_md.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_md@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_xlg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_xlg@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+#p30-free-your-eyes-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_freeYourEyes_md.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#p30-share-in-seconds-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_xlg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: calc(100vh - 64px);
+}
+
+@media (max-width: 1024px) and (max-aspect-ratio: 1 / 1) {
+    #p30-share-in-seconds-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_xs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: calc(100vh - 44px);
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-max-device-pixel-ratio: 1.4) {
+    #p30-share-in-seconds-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_md.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #p30-share-in-seconds-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_md@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    #p30-share-in-seconds-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_xlg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 4 / 3) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #p30-share-in-seconds-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_xlg@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.p30-img-share-in-seconds {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    /* background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/img-share-in-seconds@2x.jpg); */
+}
+
+.p30-img-share-in-seconds .p30-component-description {
+    padding-right: 10px;
+}
+
+.p30-a-redefined-perspective-section {
+    height: 200vh;
+}
+
+#p30-a-redefined-perspective-animate .p30-fullscreen-1 {
+    height: calc(100vh - 65px);
+}
+
+.p30-ready-exploration .p30-component-figure-content {
+    height: calc(100vh - 80px);
+    max-width: 50vw;
+}
+
+
+/* photo gallery background imgages part 2 end */
+
+@-webkit-keyframes moveFullScreen {
+    0% {
+        padding: calc((100vh - 65px - 46vw) / 2) 4vw calc((100vh - 65px - 46vw) / 2) 50vw;
+    }
+    50% {
+        padding: calc((100vh - 65px - 46vw) / 2) 27vw calc((100vh - 65px - 46vw) / 2) 27vw;
+        height: calc(100vh - 65px);
+    }
+    100% {
+        padding: 0;
+        height: calc(100vh - 65px);
+    }
+}
+
+@keyframes moveFullScreen {
+    0% {
+        padding: calc((100vh - 65px - 46vw) / 2) 4vw calc((100vh - 65px - 46vw) / 2) 50vw;
+    }
+    50% {
+        padding: calc((100vh - 65px - 46vw) / 2) 27vw calc((100vh - 65px - 46vw) / 2) 27vw;
+        height: calc(100vh - 65px);
+    }
+    100% {
+        padding: 0;
+        height: calc(100vh - 65px);
+    }
+}
+
+@-webkit-keyframes moveOriginScreen {
+    0% {
+        padding: 0;
+        height: calc(100vh - 65px);
+    }
+    50% {
+        padding: calc((100vh - 65px - 46vw) / 2) 27vw calc((100vh - 65px - 46vw) / 2) 27vw;
+        height: calc(100vh - 65px);
+    }
+    100% {
+        padding: calc((100vh - 65px - 46vw) / 2) 4vw calc((100vh - 65px - 46vw) / 2) 50vw;
+    }
+}
+
+@keyframes moveOriginScreen {
+    0% {
+        padding: 0;
+        height: calc(100vh - 65px);
+    }
+    50% {
+        padding: calc((100vh - 65px - 46vw) / 2) 27vw calc((100vh - 65px - 46vw) / 2) 27vw;
+        height: calc(100vh - 65px);
+    }
+    100% {
+        padding: calc((100vh - 65px - 46vw) / 2) 4vw calc((100vh - 65px - 46vw) / 2) 50vw;
+    }
+}
+
+@media (min-width: 769px) and (min-aspect-ratio: 16 / 9) {
+    @-webkit-keyframes moveFullScreen {
+        0% {
+            padding: calc(15vh - 32.5px) 8vw calc(15vh - 32.5px) calc(92vw - 70vh);
+        }
+        50% {
+            padding: calc(15vh - 32.5px) calc(50vw - 35vh) calc(15vh - 32.5px) calc(50vw - 35vh);
+            height: calc(100vh - 65px);
+        }
+        100% {
+            padding: 0;
+            height: 100vh;
+        }
+    }
+    @keyframes moveFullScreen {
+        0% {
+            padding: calc(15vh - 32.5px) 8vw calc(15vh - 32.5px) calc(92vw - 70vh);
+        }
+        50% {
+            padding: calc(15vh - 32.5px) calc(50vw - 35vh) calc(15vh - 32.5px) calc(50vw - 35vh);
+            height: calc(100vh - 65px);
+        }
+        100% {
+            padding: 0;
+            height: 100vh;
+        }
+    }
+    @-webkit-keyframes moveOriginScreen {
+        0% {
+            padding: 0;
+            height: 100vh;
+        }
+        50% {
+            padding: calc(15vh - 32.5px) calc(50vw - 35vh) calc(15vh - 32.5px) calc(50vw - 35vh);
+            height: calc(100vh - 65px);
+        }
+        100% {
+            padding: calc(15vh - 32.5px) 8vw calc(15vh - 32.5px) calc(92vw - 70vh);
+        }
+    }
+    @keyframes moveOriginScreen {
+        0% {
+            padding: 0;
+            height: 100vh;
+        }
+        50% {
+            padding: calc(15vh - 32.5px) calc(50vw - 35vh) calc(15vh - 32.5px) calc(50vw - 35vh);
+            height: calc(100vh - 65px);
+        }
+        100% {
+            padding: calc(15vh - 32.5px) 8vw calc(15vh - 32.5px) calc(92vw - 70vh);
+        }
+    }
+}
+
+.p30-phone-left-right {
+    margin-top: 65px;
+}
+
+.p30-phone-left-right .p30-component-figure {
+    height: calc(100vh - 100px);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.p30-phone-left-right .p30-component-figure .p30-component-figure-content {
+    height: 100%;
+}
+
+#p30-see-both-sides-story .p30-component-tile {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+#p30-see-both-sides-story .p30-see-both-sides-story-img {
+    width: 100%;
+    max-width: 50vw;
+}
+
+
+/* photo gallery background imgages */
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-img-bg-super-low-light-before {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superLowLight_before_xs.jpg);
+    }
+    .p30-img-bg-super-low-light-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superLowLight_after_xs.jpg);
+    }
+    .p30-img-bg-leica-style-before {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_leicaStyle_before_xs.jpg);
+    }
+    .p30-img-bg-leica-style-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_leicaStyle_after_xs.jpg);
+    }
+    .p30-img-bg-super-hdr-before {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superHdr_before_xs.jpg);
+    }
+    .p30-img-bg-super-hdr-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superHdr_after_xs.jpg);
+    }
+    .p30-img-bg-super-silky-mode-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superSilkyMode_xs.jpg);
+    }
+    .p30-img-explore-in-detail {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_exploreInDetail_xs.jpg);
+    }
+    .p30-img-selfie-expert {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_selfieExpert_xs.jpg);
+    }
+    /* .p30-img-bg-a-redefined-perspective {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aRedefinedPerspective_xs.jpg);
+  } */
+    .p30-img-amplify-the-sound {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_amplifyTheSound_xs.jpg);
+    }
+    .p30-img-ready-for-exploration {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_readyForExploration_xs.jpg);
+    }
+    /*#p30-share-in-seconds-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_xs.jpg);
+  }*/
+}
+
+@media (min-aspect-ratio: 1 / 1) and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-img-bg-super-low-light-before {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superLowLight_before_md@2x.jpg);
+    }
+    .p30-img-bg-super-low-light-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superLowLight_after_md@2x.jpg);
+    }
+    .p30-img-bg-leica-style-before {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_leicaStyle_before_md@2x.jpg);
+    }
+    .p30-img-bg-leica-style-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_leicaStyle_after_md@2x.jpg);
+    }
+    .p30-img-bg-super-hdr-before {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superHdr_before_md@2x.jpg);
+    }
+    .p30-img-bg-super-hdr-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superHdr_after_md@2x.jpg);
+    }
+    .p30-img-bg-super-silky-mode-after {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_superSilkyMode_md@2x.jpg);
+    }
+    .p30-img-explore-in-detail {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_exploreInDetail_md@2x.jpg);
+    }
+    .p30-img-selfie-expert {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_selfieExpert_md@2x.jpg);
+    }
+    .p30-img-bg-a-redefined-perspective {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aRedefinedPerspective_md@2x.jpg);
+    }
+    .p30-img-amplify-the-sound {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_amplifyTheSound_md@2x.jpg);
+    }
+    .p30-img-ready-for-exploration {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_readyForExploration_md@2x.jpg);
+    }
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_md@2x.jpg);
+    }
+    #p30-free-your-eyes-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_freeYourEyes_md@2x.jpg);
+    }
+    /*#p30-share-in-seconds-img {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_shareInSeconds_md@2x.jpg);
+  }*/
+    #p30-a-redefined-perspective-figure .p30-component-figure-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aRedefinedPerspective_md@2x.jpg);
+    }
+}
+
+
+/* photo gallery background imgages end */
+
+
+/*left2right-p2 end*/
+
+
+/*section1*/
+
+.p30-h1-area .p30-section-title {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.p30-h1-area .p30-section-title svg {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*title-5*/
+
+.p30-section-title5 .p30-section-title-white {
+    background-color: #3eb69a;
+}
+
+
+/*title-6*/
+
+.p30-section-title6 .p30-section-title-white {}
+
+
+/*change0319*/
+
+.p30-title-space {
+    height: 50vh;
+}
+
+.p30-section-title1 {
+    height: calc((100vh - 64px) * 6 + 50vh);
+}
+
+.p30-section-title2,
+.p30-section-title-area.p30-section-title4 {
+    height: calc((100vh - 64px) * 4 + 50vh);
+}
+
+@media (min-width: 1919px) {
+    #p30-intro-colors .p30-component-description .p30-h2 {
+        padding-top: 65px;
+    }
+}
+
+@media (max-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    .p30-text-center {
+        text-align: center;
+    }
+    .p30-m-photo-gallery .p30-sticky {
+        position: static;
+        height: 100%;
+    }
+    .p30-m-photo-gallery .p30-component-figure {
+        position: -webkit-sticky;
+        position: sticky;
+        top: calc(50vh - 50vw);
+    }
+    #leicaStyle .p30-img-left {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    #p30-a-redefined-perspective-animate .p30-component-description {
+        height: auto;
+        position: static;
+    }
+    #p30-a-redefined-perspective-animate .p30-sticky {
+        position: static;
+    }
+    #p30-a-redefined-perspective-animate .p30-component-tile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #p30-a-redefined-perspective-animate .p30-component-figure {
+        width: 100vw;
+        max-width: unset;
+        height: calc(100vw * 0.40625);
+        margin: 0;
+        position: static;
+    }
+    #p30-a-redefined-perspective-animate .p30-component-figure .p30-component-figure-img {
+        background-size: cover;
+    }
+    .p30-a-redefined-perspective-section {
+        height: 100vh;
+    }
+    #p30-stableVideosContainer .p30-component-tile {
+        /* height: auto; */
+        color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    #p30-stableVideosCanvas {
+        top: 0px;
+    }
+    #p30-super-silky,
+    #p30-explore-in-detail,
+    #p30-selfie-expert {
+        min-height: calc(100vh - 44px);
+    }
+    #p30-super-silky .p30-component-tile {
+        height: auto;
+    }
+    #p30-see-both-sides-story {
+        margin: 30px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #p30-see-both-sides-story .p30-component-tile {
+        width: 100%;
+    }
+    #p30-see-both-sides-story img {
+        max-width: 100%;
+        margin: 65px 0;
+    }
+    .p30-ready-exploration {
+        height: auto;
+    }
+    .p30-ready-exploration .p30-component-figure-content {
+        max-width: unset;
+        width: 100%;
+        height: 60vh;
+    }
+    .p30-make-friend {
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .p30-AR-measure,
+    .p30-AI-safeguard {
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .p30-img-free-your-eyes,
+    .p30-img-motion-sensing-game {
+        /* background-image: none;
+          height: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: flex-end; */
+    }
+    .p30-img-free-your-eyes .p30-component-description,
+    .p30-img-motion-sensing-game .p30-component-description {
+        padding: 30px;
+        margin: 0;
+        height: 100%;
+    }
+    .p30-img-free-your-eyes .p30-component-figure {
+        /* position: sticky;
+          top: 40px;
+          background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/img_free_your_eyes_xs.jpg);
+          background-size: cover; */
+    }
+    /* .p30-img-motion-sensing-game .p30-component-figure {
+          position: sticky;
+          top: 40px;
+          background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/img_motion_sensing_game_xs.jpg);
+          background-size: cover;
+      } */
+    #p30-motion-sensing-game-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_motionSensingGame_xs.jpg);
+    }
+    #p30-free-your-eyes-img {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_freeYourEyes_xs.jpg);
+    }
+    #p30-share-in-seconds .p30-component-description {
+        padding: 30px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    #p30-share-in-seconds-white-bg {
+        width: 100%;
+    }
+    #p30-see-both-sides-story .p30-see-both-sides-story-img {
+        max-width: unset;
+    }
+}
+
+.p30-pc {
+    display: block;
+}
+
+.p30-mobile-superZoom {
+    display: none;
+}
+
+.p30-powerAnimation-wrapper {
+    width: 49vw;
+}
+
+.p30-camerSystem .p30-component-description,
+.p30-camerSystem .p30-component-figure,
+.p30-mobile-camerSystemImg .p30-component-description,
+.p30-mobile-camerSystemImg .p30-component-figure {
+    -ms-flex: 0 1 auto;
+}
+
+.p30-camerSystem .p30-component-figure,
+.p30-mobile-camerSystemImg .p30-component-figure {
+    height: 100%;
+}
+
+.p30-mobile-camerSystemImg .p30-component-figure {
+    -ms-flex-align: start;
+}
+
+#p30-photo-zoom-content .p30-component-figure,
+#p30-photo-zoom-content .p30-component-description.p30-pc {
+    -ms-flex: 0 1 auto;
+}
+
+@media (max-width: 1025px) and (max-aspect-ratio: 1 / 1) {
+    #p30-a-redefined-perspective-animate .p30-component-tile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .p30-a-redefined-perspective-section #bg-scroll-to-full {
+        width: 100vw;
+        max-width: unset;
+        height: calc(100vw * 0.40625);
+        margin: 0;
+        position: static;
+    }
+    #p30-a-redefined-perspective-animate .p30-component-description {
+        height: auto;
+        position: static;
+    }
+}
+
+
+/*mobile-style*/
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-sticky {
+        top: 44px;
+    }
+    .p30-pc {
+        display: none;
+    }
+    .p30-mobile-height {
+        height: auto;
+    }
+    .p30-section-title-font {
+        font-size: 60vw;
+    }
+    #p30-intro-hero-description {
+        padding-top: 0;
+        margin-top: -60vh;
+    }
+    .p30-h2 span {
+        word-break: normal;
+    }
+    /*change color*/
+    #p30-intro-colors-showcase-container {
+        top: 45%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+    }
+    #p30-intro-colors {
+        position: relative;
+        height: 100%;
+    }
+    #p30-intro-colors-showcase {
+        height: calc(100vh - 44px);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 44px;
+    }
+    #p30-intro-colors-number {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90vh;
+        padding-left: 5vw;
+        margin-bottom: 10vh;
+    }
+    #p30-intro-colors-caption {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 90vh;
+        padding-right: 5vw;
+        margin-bottom: 10vh!important;
+    }
+    /*section-title1*/
+    .p30-section-title1 {
+        height: calc((100vh - 44px) * 5.5);
+    }
+    #p30-blockt1-trigger {
+        top: 200vh
+    }
+    #p30-section-title1 .p30-section-title-font {
+        font-size: 50vw;
+    }
+    .p30-camerSystem {
+        position: relative;
+        height: auto;
+    }
+    .p30-mobile-camerSystemImg {
+        height: auto;
+        top: 15vh;
+        padding-top: 30vh;
+        margin-top: -20vh;
+    }
+    .p30-camerSystem .p30-component-figure {
+        height: 0;
+        margin: 0;
+    }
+    .p30-mobile-camerSystemImg .p30-component-description {
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .p30-mobile-camerSystemImg .p30-component-figure {
+        width: auto;
+        max-width: 100vw;
+    }
+    .p30-component-figure-picBg {
+        transform-origin: 0% 78%;
+    }
+    /*super-zoom*/
+    #p30-photo-zoom-content {
+        margin-bottom: 0;
+        height: calc(100vh - 44px);
+    }
+    #p30-photo-zoom-content .p30-component-figure {
+        height: 0;
+    }
+    .p30-super-zoom .p30-component-description {
+        max-width: 90%;
+    }
+    .p30-mobile-superZoom {
+        display: block;
+        color: white;
+    }
+    .p30-mobile-superZoom a.superscript {
+        color: white;
+    }
+    /*moon-zoom*/
+    #p30-photo-zoom-number {
+        right: 70vw;
+    }
+    #p30-photo-zoom-number.animateTop {
+        -webkit-transform: translate(0, -60vh) !important;
+        transform: translate(0, -60vh) !important;
+    }
+    .p30-photo-zoom-phone {
+        width: calc(30vh * 2.13);
+        height: 30vh;
+        left: 60%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    #p30-photo-zoom-title {
+        opacity: 0;
+        left: 60%;
+    }
+    #p30-photo-zoom-phone-mask {
+        opacity: 0;
+    }
+    /*hardware-upgrade*/
+    .p30-hardware-upgrade .p30-h2 {
+        margin: 0.5em 0;
+    }
+    .p30-hardware-upgrade .p30-component-description {
+        margin-top: 0px;
+        padding-top: 60px;
+    }
+    .p30-hardware-upgrade .p30-component-figure {
+        max-width: 100%;
+    }
+    .p30-hardware-upgrade .p30-component-figure .p30-component-figure-wrap-after {
+        text-align: center;
+    }
+    .p30-hardware-upgrade .p30-component-figure .p30-component-figure-wrap-after img {
+        position: static;
+        width: 60%;
+        height: auto;
+    }
+    .p30-cameraFunction-list {
+        margin-top: 0;
+    }
+    #p30-low-light {
+        margin-top: 60px;
+    }
+    .p30-container {
+        margin-top: 60px;
+    }
+    #p30-a-redefined-perspective-animate {
+        margin-top: 60px;
+    }
+    /*section-title2*/
+    .p30-section-title2 {
+        height: auto;
+        margin-bottom: 120px;
+    }
+    .p30-darkLight-camera-warpper {
+        height: auto;
+    }
+    /*section-title3*/
+    .p30-idDesign-bgwarpper {
+        top: 50%;
+    }
+    /*compact-design*/
+    .p30-compactDesign-bgwarpper {
+        top: 0;
+    }
+    .p30-compactDesignbg.p30-background {
+        height: auto;
+        width: 100%;
+    }
+    .p30-background {
+        height: auto;
+        width: 100%;
+    }
+    .p30-mobile-compactDesign {
+        height: auto;
+        background: #cbefff;
+        padding-bottom: 120px;
+    }
+    .p30-sticky-specail {
+        position: sticky;
+        height: auto;
+        top: 44px;
+    }
+    .p30-compactDesignbg-scale {
+        opacity: 0;
+    }
+    .p30-mobile-compactDesign .p30-component-tile {
+        height: auto;
+    }
+    .p30-mobile-compactDesign .p30-component-figure {
+        display: none;
+    }
+    #p30-idDesign-description {
+        bottom: 5vh;
+    }
+    .p30-idDesign-bgwarpper {
+        transform: translate(0%, -40%) scale(8.7);
+    }
+    .p30-idDesign-bgwarpper.p30-scale {
+        transform: translate(0%, -40%) scale(0.9);
+    }
+    .p30-compactDesign-bgwarpper.p30-scale {
+        transform: translate(10%, -40vh) scale(1.3);
+    }
+    .p30-img-ready-for-exploration {
+        background-size: contain;
+    }
+    #integratedAIVideoContainer .p30-component-tile {
+        height: auto;
+    }
+    .p30-extraProtection-more {
+        height: auto;
+    }
+    /*section-title4*/
+    #p30-cpu-video {
+        height: 100%;
+        width: auto;
+    }
+    #p30-cpu-mob-video {
+        height: auto;
+        width: 100%;
+    }
+    .p30-980icon {
+        width: 14vh;
+    }
+    .p30-section-title4 {
+        text-align: left;
+    }
+    .p30-section-title4-details {
+        display: block;
+        text-align: left;
+        font-size: 0;
+    }
+    .p30-powerSpeed {
+        position: relative;
+        width: 50%;
+        display: inline-block;
+        margin-bottom: 2vw;
+    }
+    .p30-powerSpeed-split {
+        display: none;
+    }
+    .p30-component-description,
+    .p30-component-description-center {
+        margin: 30px 25px 30px 25px;
+    }
+    .p30-communication-description {
+        max-width: 100vw;
+        width: 100%;
+        text-align: center;
+    }
+    .p30-communication-img {
+        width: 85vw;
+        height: calc(85vw * 0.467);
+        margin-top: 60px;
+    }
+    .p30-batteryPart {
+        padding-top: 0;
+    }
+    .p30-cspeedyRecovery-des {
+        max-width: 100vw;
+        margin: 30px 25px;
+    }
+    .p30-speedyRecovery {
+        height: 50vh;
+        top: 30vh;
+    }
+    .p30-speedyRecovery-number {
+        transform: translate(-50%, 15vh);
+    }
+    #p30-intro-powerSlider1-trigger,
+    #p30-intro-powerSlider2-trigger,
+    #p30-intro-powerSlider3-trigger {
+        position: relative;
+        top: -10vh;
+    }
+    .p30-wirelessPower.p30-sticky {
+        height: 50vh;
+        top: 50vh;
+        background-color: white;
+    }
+    .p30-fullscreen-1.p30-wirelessPower.p30-sticky .p30-component-description {
+        display: none;
+    }
+    .p30-wirelessPower.p30-sticky {
+        overflow: hidden;
+    }
+    .p30-powerAnimation-wrapper {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0 0 0 10%;
+    }
+    .p30-power-animation {
+        opacity: 0.5;
+    }
+    .p30-power-animation.animatedSlider1,
+    .p30-power-animation.animatedSlider2,
+    .p30-power-animation.animatedSlider3 {
+        opacity: 1;
+    }
+    .p30-wirelessPower .p30-component-description {
+        max-width: 100vw;
+    }
+    /*section-title6*/
+    .p30-fullscreen-45 {
+        height: calc((100vh - 44px) * 4);
+        margin-top: 30vh;
+    }
+    .p30-mobile-accessorize {
+        margin-top: 120px;
+    }
+    .p30-extraProtection-description-right {
+        text-align: left;
+    }
+    .p30-extraProtection-description {
+        display: block;
+        width: 100%;
+    }
+    .p30-extraProtection {
+        max-width: calc(100vw - 50px);
+    }
+    .p30-extraProtection-description-left,
+    .p30-extraProtection-description-right {
+        width: 100%;
+    }
+    .p30-extraProtection-details {
+        width: calc(100vw - 50px);
+    }
+    /*p30-family*/
+    .p30-family {
+        margin-top: 120px;
+    }
+    .p30-family .p30-p {
+        font-size: 3.5vw;
+    }
+    .p30-family-more {
+        width: 100%;
+    }
+    .p30-family-details {
+        width: 40%;
+    }
+    #p30-share-in-seconds {
+        margin: 0;
+    }
+}
+
+
+/*pad-style*/
+
+@media (max-width: 1025px) and (min-width: 768px) and (max-aspect-ratio: 1 / 1) {
+    .p30-section-title-font {
+        font-size: 30vw;
+    }
+    #p30-intro-hero-left,
+    #p30-intro-hero-right-container {
+        height: calc(60vw * 1.63);
+        width: 60vw;
+    }
+    .p30-p {
+        font-size: 4vw;
+    }
+    .p30-h2 {
+        font-size: 7.5vw;
+    }
+    #p30-tvc-canvas video,
+    #p30-tvc-mob-video {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #p30-intro-colors-number,
+    #p30-intro-colors-caption.p30-h2 {
+        margin-bottom: 10vh;
+    }
+    #p30-intro-colors-showcase-container {
+        height: 65vh;
+        width: calc(65vh / 2);
+    }
+    .p30-component-figure-picBg {
+        transform-origin: -10% 50%;
+    }
+    #p30-photo-zoom-number {
+        right: 75vw;
+        bottom: 20.5vh;
+    }
+    #p30-photo-zoom-number.animateTop {
+        -webkit-transform: translate(0, -45vh) !important;
+        transform: translate(0, -45vh) !important;
+    }
+    .p30-hardware-upgrade {
+        padding-top: 65px;
+    }
+    .p30-hardware-upgrade .p30-component-figure .p30-component-figure-wrap-after img {
+        width: 50%;
+    }
+    .p30-cameraFunction-list {
+        margin-top: 0;
+    }
+    #leicaStyle {
+        margin-top: 130px;
+    }
+    #p30-super-silky {
+        margin-top: 130px;
+    }
+    #p30-see-both-sides-story {
+        margin: 65px 25px 130px;
+    }
+    #p30-see-both-sides-story .p30-component-tile {
+        width: 100%;
+        max-width: calc(100vw - 50px);
+        height: auto;
+    }
+    #p30-see-both-sides-story img {
+        max-width: 75vw;
+        margin: 65px 0;
+    }
+    .p30-sticky-specail {
+        text-align: left;
+    }
+    .p30-compactDesign-bgwarpper {
+        height: calc(100vh - 60px);
+    }
+    .p30-compactDesign-bgwarpper .p30-background {
+        height: 100%;
+        width: auto;
+    }
+    .p30-compactDesign-bgwarpper.p30-scale {
+        transform: translate(25%, -45vh) scale(1.5);
+    }
+    .p30-ready-exploration .p30-component-figure-content {
+        width: 100%;
+        max-width: unset;
+    }
+    .p30-ready-exploration {
+        height: auto;
+    }
+    .p30-component-figure-left .p30-component-figure-img {
+        background-position: center;
+        background-size: contain;
+    }
+    .p30-make-friend {
+        height: auto;
+    }
+    .p30-AI-safeguard {
+        height: auto;
+    }
+    .p30-img-share-in-seconds .p30-component-description {
+        width: 100%;
+        margin: 30px 25px;
+        max-width: calc(100vw - 50px);
+    }
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    #p30-intro-camera-curtain,
+    .p30-moon-sticky {
+        top: 65px;
+    }
+}
+
+@media(width: 1024px) {
+    #p30-low-light {
+        margin-top: 130px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #p30-tvc-canvas .p30-tvc-canvas-crop canvas {
+        display: none !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .p30-hardware-upgrade .p30-component-figure .p30-component-figure-wrap-after img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 360px) {
+    .p30-mobile-camerSystemImg {
+        padding-bottom: 2vw;
+    }
+}
+
+@media(width: 640px) {
+    #p30-intro-colors-caption {
+        margin-bottom: 5vh!important;
+    }
+    #p30-intro-colors-number {
+        margin-bottom: 5vh;
+    }
+    .p30-section-title-font {
+        font-size: 45vw;
+    }
+    .p30-hardware-upgrade .p30-component-figure .p30-component-figure-wrap-after img {
+        width: 50%;
+    }
+}
+
+@media (width:534px) {
+    .p30-section-title-font {
+        font-size: 45vw;
+    }
+}
+
+@media (width: 768px) {
+    .p30-tvc-content div.p30-h2 {
+        margin-top: 19vh!important;
+    }
+    .p30-tvc-content a.p30-h2 {
+        margin-bottom: 16vh!important;
+    }
+}
+
+@media (min-width:1024px) and (max-width: 1366px) {
+    .p30-idDesign-bgwarpper.p30-scale {
+        transform: translate(0%, 40%) scale(0.5);
+    }
+}
+
+@media(width: 640px) {
+    .p30-component-figure-picBg {
+        transform-origin: 0% 60%;
+    }
+}
+
+
+/*change0320*/
+
+@media (max-width: 599px) {
+    .p30-wirelessPower.p30-sticky {
+        top: calc(25vh + 32px);
+    }
+    .p30-fullscreen-15.p30-wirelessPower {
+        height: 70vh;
+    }
+    .p30-fullscreen-45 {
+        height: calc((100vh - 44px) * 2);
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #p30-a-redefined-perspective-animate {
+        height: auto;
+    }
+    #p30-a-redefined-perspective-animate .p30-sticky {
+        height: auto;
+    }
+    .p30-a-redefined-perspective-animate .p30-sticky {
+        height: 100%;
+        display: block;
+    }
+    #bg-scroll-to-full {
+        height: auto!important;
+        position: sticky!important;
+        top: calc(50vh - 50vw);
+    }
+    #p30-a-redefined-perspective-figure {
+        position: sticky;
+        top: calc(50vh - 50vw);
+    }
+    /*#p30-a-redefined-perspective-animate .p30-component-figure .p30-component-figure-img.p30-contain {
+        transform: scale(1);
+    }*/
+    #p30-a-redefined-perspective-animate .p30-component-figure .p30-component-figure-img {
+        transition: all 1s;
+        transform: scale(2.5);
+        background-size: contain;
+    }
+    #p30-explore-in-detail {
+        margin-top: 0;
+    }
+}
+
+
+/*p30-family*/
+
+.p30-family-details img {
+    height: 50vh;
+    width: auto;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .p30-family-details img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+
+/*bitmap*/
+
+#p30-bitMap-video,
+#p30-bitMap-mob-video {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    margin-top: 1px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    #p30-bitMap-video {
+        height: 100%;
+        width: auto;
+    }
+    #p30-bitMap-mob-video {
+        width: 100%;
+        height: auto;
+    }
+    #p30-photo-zoom-content {
+        margin-top: -5px;
+    }
+}
+
+.p30-section-title5 .p30-section-title-white {
+    background-color: transparent;
+}
+
+
+/*logo*/
+
+#p30-intro-logo {
+    width: 150px;
+    height: 66px;
+    margin: 65px auto 0px;
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/pic_introLogo.jpg);
+    background-size: contain;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    #p30-intro-log {
+        height: 50px;
+        margin: 30px auto 0px;
+    }
+    #p30-intro-hero-description {
+        padding-bottom: 60px;
+    }
+}
+
+#p30-motion-sensing-game,
+#p30-share-in-seconds {
+    height: calc((100vh - 64px) * 2 + 50vh);
+}
+
+#p30-motion-sensing-game-trigger,
+#p30-share-in-seconds-trigger {
+    position: relative;
+    top: 50vh;
+}
+
+
+/* video */
+
+#p30-see-both-sides-story-img {
+    position: relative;
+}
+
+.middle-playbtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.middle-playbtn svg {
+    width: 4.17vw;
+}
+
+.p30-telephoto-camera-video .p30-component-figure-wrap-before {
+    position: relative;
+}
+
+.p30-AR-measure .p30-component-figure-wrap-before {
+    position: relative;
+}
+
+.p30-AI-safeguard .p30-component-figure-wrap-before {
+    position: relative;
+}
+
+.p30-AI-safeguard .p30-component-figure-wrap-before svg path {
+    fill: black;
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 768px) {
+    .middle-playbtn svg {
+        width: 9vw;
+    }
+}
+
+.p30-playbtn {
+    display: none;
+}
+
+.p30-tvc-title {
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.middle-playbtn {
+    cursor: pointer;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .p30-component-figure-wrap-before img,
+    .p30-component-figure-wrap-after img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.des-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #c2c0c0;
+}
+
+.des-container li {
+    padding-bottom: .75em;
+}
+
+
+/*chang0321*/
+
+.p30-ar-measure-pic {
+    width: 100%;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    left: 50%!important;
+    transform: translateX(-50%);
+}
+
+.p30-img-telephoto-camera-video {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/video/pic_monkey-video-poster_md.jpg);
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-ar-measure-pic {
+        height: 85%!important;
+        width: auto!important;
+    }
+    .p30-extraProtection-more {
+        top: calc(50vh - 50vw);
+    }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-img-telephoto-camera-video {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/video/pic_monkey-video-poster_xs.jpg);
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-img-telephoto-camera-video {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/video/pic_monkey-video-poster_md@2x.jpg);
+    }
+}
+
+.p30-img-ai-safeguard {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/p30_border_md@2x.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    .p30-img-ai-safeguard {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/p30_border_md.jpg);
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-img-ai-safeguard {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/p30_border_md@2x.jpg);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .p30-p {
+        font-size: 3vw;
+    }
+    .p30-h2 {
+        font-size: 6.5vw;
+    }
+    .p30-tvc-title {
+        font-size: 6.5vw;
+    }
+    .p30-section-title-font {
+        font-size: 25vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .p30-p {
+        font-size: 4vw;
+    }
+    .p30-h2 {
+        font-size: 7vw;
+    }
+    .p30-tvc-title {
+        font-size: 7vw;
+    }
+}
+
+@supports (-moz-appearance: none) or (_: -ms-lang(x)) {
+    #p30-bitMap-video,
+    #p30-cpu-video {
+        -webkit-transform: translate(-50.1%, -50%);
+        transform: translate(-50.1%, -50%);
+    }
+}
+
+
+/*communication-description remove*/
+
+@media (min-width: 2560px) {
+    .p30-section-title-font {
+        font-size: 8vw;
+    }
+    .p30-component-figure-picBg {
+        transform-origin: 12% 20%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #p30-explore-in-detail .p30-fullscreen-1 {
+        height: auto;
+    }
+}
+
+.component-footnotes {
+    list-style-type: decimal!important;
+}
+
+ol.component-footnotes {
+    padding-left: 20px;
+}
+
+ol.component-footnotes li.current {
+    color: #1e1e1e;
+}
+
+#p30-photo-zoom-content .superscript {
+    color: #fff;
+}
+
+.p30-hardware-upgrade .superscript,
+.p30-img-motion-sensing-game .superscript {
+    color: #fff;
+}
+
+
+/*accessorizebg*/
+
+.p30-section .p30-accessorizebg {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg_xlg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) and (max-aspect-ratio: 1 / 1) {
+    .p30-section .p30-accessorizebg {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg_xs.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-max-device-pixel-ratio: 1.4) {
+    .p30-section .p30-accessorizebg {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg_md.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-aspect-ratio: 16 / 9) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-section .p30-accessorizebg {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg_md@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 4 / 3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    .p30-section .p30-accessorizebg {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg_xlg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1024px) and (min-aspect-ratio: 4 / 3) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .p30-section .p30-accessorizebg {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_accessorizebg_xlg@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.p30-section-title6 .p30-section-content-title {
+    background-color: #000000;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .p30-section-title6 .p30-component-tile {
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+}
+
+.p30-section-title6 {
+    color: black;
+}
+
+/*.p30-section-title6 sup a {
+    color: white;
+}*/
+/*change0325*/
+#p30-backgroundt2,
+#p30-film-mob-video {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    margin-top: 1px;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+    #p30-backgroundt2{
+        height: 100%;
+        width: auto;
+    }
+    #p30-film-mob-video {
+    	width: 100%;
+    	height: auto;
+    }
+}
+  #p30-backgroundt2,
+  #p30-bitMap-video{
+    -webkit-transform: translate(-50.1%, -50%);
+    transform: translate(-50.1%, -50%);
+  }
+#p30-videoZoomVideos{
+	    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-aspect-ratio: 1/1)
+#p30-cpu-video {
+    height: 100%;
+    width: auto;
+}
+#leicaStyle .p30-component-figure-wrap-after{
+	opacity: 0!important;
+}
+.p30-photo-gallery-container:not(#leicaStyle):not(#p30-low-light) .p30-component-figure-wrap-before{
+ 	width: 100%!important;
+ }
+ 
+ #integratedAIVideoContainer .p30-component-figure-wrap-after{display:block;}
+#integratedAIVideoContainer .p30-img-ai-video-editor{background-size: contain;background-position: center;}
+.p30-img-ai-video-editor {
+    background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aiVideoEditor_md.jpg);
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .p30-img-ai-video-editor {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aiVideoEditor_xs.jpg);
+        }
+}
+@media (min-aspect-ratio: 1 / 1) and (min-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .p30-img-ai-video-editor {
+        background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/images/pic_aiVideoEditor_md@2x.jpg);
+    }
+}
+ /*change0325-end*/
+ /* hide video button */
+ .p30-img-ai-video-editor + a {
+ display: none;
+}
+
+/* fix iphone x super zoom*/
+@media (max-width: 768px) and (max-aspect-ratio: 10 / 21){
+    #p30-photo-zoom-number {
+        right: 75vw;
+    }
+}
+/* fix iphone x super zoom*/
+.p30-super-zoom .p30-component-description {
+    color: white;
+    max-width: calc(50vw - 15vw);
+}
+#p30-videoZoomVideos{
+	    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (max-aspect-ratio: 1/1)
+#p30-cpu-video {
+    height: 100%;
+    width: auto;
+}
+#p30-intro-logo{
+	width: 180px;
+	background: none;
+}
+
+span.nowrap{
+    white-space: nowrap;
+    display: inline-block;
+}
+.pop-close svg{    background-color: rgba(0,0,0,0.3);
+}
+ol.component-footnotes{padding-left: 30px;}
+
+
+
+.preorder-btn{
+    display: inline-block;
+    height: 3vw;
+    line-height: 3vw;
+    padding: 0 1.2vw;
+    background: #d20a2c;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: .5vw;
+    color: #fff;
+    }
+@media (max-aspect-ratio: 1/1){
+    .preorder-btn{ 
+        height: 6vw;
+        line-height: 6vw;
+        padding: 0 2.4vw;
+        background: #d20a2c;
+        font-size: 2vw;
+        border-radius: 1vw;
+    }
+}
+
+.white-btn{
+    color: #000;
+    background-color: transparent;
+    border:black 1px solid;black 1px solid;
+}
+
+body{
+	background-color: white;
+}
+
+/*change20190410*/
+@media(min-width: 1024px) {
+	#p30-tvc-canvas{
+		top: 0;
+		height: 100%;
+	}
+	#p30-intro-camera-slogan{
+		font-size: 12vw;
+	}
+}
+
+
+/*ie css*/
+.p30-ie{
+	display: none;
+}
+/*section1*/
+#p30-section1{
+	position: relative;
+	background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/ie/pic_ie_kv.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*section2*/
+#p30-section2{
+	background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/ie/pic_ie_s2.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*section3*/
+/*section4*/
+#p30-tvc-canvas{
+	clip-path: inset(0%)!important;
+	-webkit-clip-path:inset(0%)!important;
+	position: relative!important;
+	height: calc(100vh - 64px);
+}
+/*section5-color*/
+/*section6-摄影大师*/
+/*section7-三摄*/
+#p30-section7{
+	background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/ie/pic_ie_s7.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*section8-superzoom*/
+/*section9-moon*/
+#p30-section9{
+	background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/ie/pic_ie_moon.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+/*section10-hardware-upgrade*/
+/*section11-hardware-upgrade*/
+/*section12-leicaStyle*/
+/*section13-superHDR*/
+/*section15-a-redefined-perspective-animate*/
+/*section18-filmmaking*/
+.p30-section-title2{
+	height: calc((100vh - 64px) * 1);
+}
+.p30-section-title2 .p30-overflow{
+	height: calc(100vh - 65.5px);
+}
+/*section23-component-description*/
+#idDesign.p30-component-description-center{
+	width: 100%;
+	max-width: 100vw;
+	background: #cbefff;
+}
+.p30-idDesign-bgwarpper.p30-scale{
+	padding-top: 120px;
+	position: static;
+	transform: translate(0) scale(0.5);
+}
+.p30-idDesign-bgwarpper.p30-scale img{
+	position: static;
+}
+@media(max-width:768px){
+	.p30-idDesign-bgwarpper.p30-scale{
+	padding-top: 60px;
+}
+}
+@media (min-width: 768px) {
+	#p30-idDesign-description{
+		position: static;
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+/*section24--compact-design-->*/
+#p30-section24{
+	background-image: url(/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/camera-intro/pic_compactDesign_md@2x.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*section27*/
+@media (min-width: 769px) {
+	.p30-section-title-area.p30-section-title4{
+		height: calc(100vh - 64px);
+	}
+	.p30-section-title4 .p30-overflow{
+		height: calc(100vh - 65.5px);
+	}
+	.p30-section-title5 .p30-overflow{
+		height: calc(100vh - 65.5px);
+	}
+}
+
+/*section30--speedyRecovery*/
+.p30-speedyRecovery{
+	position: static;
+	height: auto;
+}
+#p30-share-in-seconds{
+	position: relative;
+	height: calc(100vh - 64px);
+}
+#p30-share-in-seconds-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.p30-component-figure-left .p30-img-ai-safeguard{
+	background-position: center;
+}
+
+#p30-accessorizebg{
+	position: absolute;
+	top: 0;left: 0;
+}
+
+
+/* swiper start*/
+#p30-intro-colors-showcase-container > div>div {
+    opacity: 1;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+#p30-intro-colors-showcase-container > div>div {position: relative;height:100%;}
+
+.p30-intro-colors-slide1 #p30-intro-colors-showcase{background-color:rgb(220,200,240);}
+.p30-intro-colors-slide2 #p30-intro-colors-showcase{background-color:rgb(255,205,120);}
+.p30-intro-colors-slide3 #p30-intro-colors-showcase{background-color:rgb(215,250,250);}
+.p30-intro-colors-slide4 #p30-intro-colors-showcase{background-color:rgb(244,243,243);}
+.p30-intro-colors-slide5 #p30-intro-colors-showcase{background-color:rgb(250,245,245);}
+
+#p30-intro-colors-showcase .swiper-pagination{right:15%;bottom: 50%;transform: translate3d(0,50%,0);}
+#p30-intro-colors-showcase .swiper-pagination span{display:block;margin:10px 0;width:20px;height:20px;border: white 2px solid;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(1){background-color:#003352;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(2){background-color:#a67d94;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(3){background-color:#ff4c28;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(4){background-color:#bdf1ff;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(5){background-color:#f2eee4;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(6){background-color:#0d9ead;}
+#p30-intro-colors-showcase .swiper-pagination span:nth-of-type(7){background-color:#303030;}
+.swiper-button-prev,.swiper-button-next{outline:none;}
+@media (max-aspect-ratio: 1 / 1) {
+    #p30-intro-colors-number{position: absolute;top:95%;margin:0;}
+    #p30-intro-colors-caption{position: absolute;top:95%;right:0;}
+    #p30-intro-colors-showcase{position: relative;}
+    #p30-intro-colors-showcase .swiper-pagination{right:50%;transform:translate3d(50%,0,0);bottom: 15%;width: 100%;}
+    #p30-intro-colors-showcase .swiper-pagination span{display: inline-block;margin: 0 8px;width:30px;height:30px;}
+}
+
+
+.p30-extraProtection-details{height:auto;margin: 0;}
+@media (max-aspect-ratio: 1/1){
+.p30-extraProtection-more {
+     top: 0; 
+}
+}
+
+.p30-extraProtection{margin:30px auto;}
+.p30-center-margin{margin:0 30px;}
+.p30-accSwiper{position: relative;margin: 65px 0 0;}
+.p30-extraProtection-more{padding:0;}
+.p30-accSwiper .swiper-button-prev{left:0;}
+.p30-accSwiper .swiper-button-next{right:0;}
+@media (max-aspect-ratio: 1/1){
+.p30-extraProtection{max-width: 100%;}
+.p30-center-margin{
+    margin: 0 25px;
+}
+.p30-center-padding{padding: 0 25px;}
+.p30-extraProtection-description { width: auto;}
+}
+/* swiper end*/
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 2000px){
+	.p30-section-title-font:not(#p30-intro-camera-slogan) {
+		font-size: 13vw !important;
+	}
+}

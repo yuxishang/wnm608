@@ -1,0 +1,149 @@
+
+:root {
+	--color-blue-dark:#EBEFF2;
+	--color-blue-light:#C4E5F2;
+	--color-yellow-light:#F2ECCE;
+	--color-nude:#333140;
+	--color-gray-light:#D9D5D2;
+	--color-gray-dark:#545759;
+
+
+
+	--header-height:3rem;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+/* CSS RESET */
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	font-family:EB Garamond, sans-serif;
+	font-size:100%;
+	margin:0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:'EB Garamond',serif;
+}
+
+a {
+	color:inherit;
+	font-weight:bold;
+	text-decoration: none;
+	font-size: 12pt;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+/* Small Classes */
+
+.container {
+	max-width:1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+.flex-parent { display:flex; }
+.flex-child { flex:1 1 auto; }
+.flex-none { flex:none; }
+.flex-wrap { flex-wrap:wrap; }
+.flex-vertical { flex-direction:column; }
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+.view-window {
+	position:relative;
+	height:60vh;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}
+.centered-child {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.fit-child {
+	max-height:calc(100% - 2em);
+	max-width:calc(100% - 2em);
+}
+
+
+
+
+
+
+/* Components */
+
+.navbar {
+	background-color:var(--color-blue-dark);
+	color:var(--color-wood-light);
+	line-height:var(--color-blue-dark);
+}
+.navbar h1 {
+	margin:0;
+	padding: 20px 10px;
+	font-size:2em;
+}
+
+
+.nav ul {
+	list-style-type:none;
+	margin-top: 1.25;
+	margin-bottom: 0;
+	padding-left: 0;
+	font-size:1.55em;
+}
+.nav a {
+	display:block;
+	padding:0 0.5em;
+}
+
+
+
+
+
+
+.card {
+	background-color:var(--color-white);
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+	border-radius:0.2em;
+	padding:1em;
+}
+.container>.card {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+.card>:first-child {
+	margin-top: 0;
+}
+.card>:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing page</title>
+	<?php include "parts/head.html" ?>
+</head>
+<body>
+	<?php include "parts/header.html" ?>
+  
+  <div id="home-top">
+        <div class="mcontainer">
+          <div class="six columns">
+            <img src="images/product4.jpg" alt="" width=100%>
+          </div>
+          <div class="ten columns ">
+            <h4>Featured Chocolate</h4> 
+            <div class="sep-left"></div> 
+            <div class="sub-left">Seven Days Without Chocolate Makes One Week</div> 
+            <p>Lula's Rosé chocolate infused with rosé wine! This is the hottest product of the summer! It's rosé season, so sit back, pour a glass, and take a bite of the sweetest new sensation of the year.</p>
+          <div class="sixteen columns">
+            <div class="sep-wrap"></div>
+          </div>
+        </div>
+      </div>
+
+    <div id="about">
+      <div class="mcontainer">
+        <div class="sixteen columns padding-bottom">
+          <h4>Receive a $20 Bonus Card to Lula's!</h4> 
+          <div class="sep-center"></div> 
+          <p>For a limited time receive a $20 Bonus eGift Card to Lula's Chocolaterie for every $100 spent in gift cards at any of our locations. Bonus eGifts valid until January 31, 2020.</p>
+        </div>
+        </div></div></div></body></html>

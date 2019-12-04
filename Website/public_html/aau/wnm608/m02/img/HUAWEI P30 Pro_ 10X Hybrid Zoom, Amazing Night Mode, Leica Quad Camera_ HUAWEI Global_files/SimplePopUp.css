@@ -1,0 +1,62 @@
+.pop-cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 800;
+}
+.pop-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 800;
+    background: rgba(0,0,0,.8);
+}
+.pop-contain{
+    position: absolute;
+    z-index: 801;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.pop-close{
+	position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.pop-close svg{
+    background-color: #0000001a;
+}
+html[dir=rtl] .pop-close{
+    position: absolute;
+    right: auto;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.pop-wrap{
+    width: 100%;
+    height: 100%;
+}
+.pop-wrap video{
+    width: 100%;
+}
+.stop-scoll {
+    overflow: hidden !important;
+    width: auto;
+ }
+ .stop-scoll body{
+ 	overflow: hidden !important;
+ }
+
+ ol.component-footnotes {
+    padding-left: 30px !important;
+}
+body{
+	background-color: white;
+}
