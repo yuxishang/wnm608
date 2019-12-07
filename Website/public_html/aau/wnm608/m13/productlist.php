@@ -48,7 +48,7 @@
 
 </nav>
 
-        <div class="product-content row gap xs-medium product-list clearfix">
+        <div class="product-list product-content row gap xs-medium clearfix">
 
    
       <?php include "parts/footer.html" ?>

@@ -1,16 +1,11 @@
 
-
-const getAPI = () =>{
-	//Fetch is a promise(js promise)
-	return fetch(`data/api.php?type=1`)
-	.then(data=>data.json()) 
-
-}
 $(()=>{
 
-	getAPI()
+	getAPI(1)
 	.then (d=>
-		console.log(d))
+		console.log(d)
+		$(".product-list")
+			.html(productListTemplate(d.result))
 	})
 
 	$(".product-thumbs img").on("mouseenter",function(e){

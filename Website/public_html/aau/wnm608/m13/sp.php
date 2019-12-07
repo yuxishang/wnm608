@@ -9,6 +9,7 @@ require_once "parts/templates.php";
 <head>
 	<meta charset="UTF-8">
 	<title>single product page</title>
+  <meta name="viewport" content="width=device-width">
 	<?php include "parts/head.html" ?>
 </head>
 <body>

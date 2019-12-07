@@ -1,6 +1,6 @@
 
 
-const productListTemplate = templater (o=>`
+const productListTemplate = templater(o=>`
 
 
 	<div class="col-xs-6 col-md-4 col-lg-3"> 
@@ -19,4 +19,5 @@ const productListTemplate = templater (o=>`
           <a href="#">ADD TO CART</a></div>
           <a href="#" class="like"><div class="fav">
           <input type="checkbox" id={"$o.id"} class="hidden">
-          <label for="{$o.id"}>&hearts;</label></div></a></div></div>`)
+          <label for="{$o.id"}>&hearts;</label></div></a></div></div>`
+          );

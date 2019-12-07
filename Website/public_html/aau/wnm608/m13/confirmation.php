@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Confirmation Page</title>
+    <meta name="viewport" content="width=device-width">
 	<?php include "parts/head.html" ?>
 </head>
 <body>
