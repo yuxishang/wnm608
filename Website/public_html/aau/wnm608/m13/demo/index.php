@@ -27,11 +27,11 @@
         <div class="lslider-content">
           <h4>Seasonal Flavors</h4>
           <h2>Coconut Lime</h2>
-          <a href="http://go-roxy.com/aau/wnm608/m12/sp.php?id=1">
+          <a href="http://go-roxy.com/aau/wnm608/m13/demo/sp.php?id=1">
           <button type="button" class="buy-now-btn" name="button">$5</button></a>
           <br>
           <br>
-          <a href="http://go-roxy.com/aau/wnm608/m12/main.php">
+          <a href="http://go-roxy.com/aau/wnm608/m13/demo/main.php">
           <button type="button" class="Enter-now-btn" name="button">Enter</button></a>
         </div>
         <div class="number-pagination">
@@ -45,11 +45,11 @@
         <div class="lslider-content">
           <h4>New Product</h4>
           <h2>Hazelnut</h2>
-          <a href="http://go-roxy.com/aau/wnm608/m12/sp.php?id=13">
+          <a href="http://go-roxy.com/aau/wnm608/m13/demo/sp.php?id=13">
           <button type="button" class="buy-now-btn" name="button">$4</button></a>
           <br>
           <br>
-          <a href="http://go-roxy.com/aau/wnm608/m12/main.php">
+          <a href="http://go-roxy.com/aau/wnm608/m13/demo/main.php">
           <button type="button" class="Enter-now-btn" name="button">Enter</button></a>
         </div>
         <div class="number-pagination">
@@ -63,11 +63,11 @@
         <div class="lslider-content">
           <h4>Best Seller</h4>
           <h2>Lavender</h2>
-         <a href="http://go-roxy.com/aau/wnm608/m12/sp.php?id=2">
+         <a href="http://go-roxy.com/aau/wnm608/m13/demo/sp.php?id=2">
           <button type="button" class="buy-now-btn" name="button">$5</button></a>
           <br>
           <br>
-          <a href="http://go-roxy.com/aau/wnm608/m12/main.php">
+          <a href="http://go-roxy.com/aau/wnm608/m13/demo/main.php">
           <button type="button" class="Enter-now-btn" name="button">Enter</button></a>
         <div class="number-pagination">
           <span>3</span>
@@ -80,11 +80,11 @@
         <div class="lslider-content">
           <h4>Fruit</h4>
           <h2>Strawberries</h2>
-        <a href="http://go-roxy.com/aau/wnm608/m12/sp.php?id=10">
+        <a href="http://go-roxy.com/aau/wnm608/m12/demo/sp.php?id=10">
           <button type="button" class="buy-now-btn" name="button">$5</button></a>
           <br>
           <br>
-           <a href="http://go-roxy.com/aau/wnm608/m12/main.php">
+           <a href="http://go-roxy.com/aau/wnm608/m12/demo/main.php">
           <button type="button" class="Enter-now-btn" name="button">Enter</button></a>
         <div class="number-pagination">
           <span>4</span>

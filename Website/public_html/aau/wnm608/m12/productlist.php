@@ -15,6 +15,7 @@ require_once "parts/templates.php";
   getAPI(1)
   .then(showList)
 </script>
+
 </head>
 <body>
 	<?php include "parts/header.html" ?>

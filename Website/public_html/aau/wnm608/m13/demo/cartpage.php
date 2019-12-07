@@ -15,7 +15,7 @@
   <div class="cart">
 
     <ul class="cartWrap">
-    
+        
     <li class="items odd">    
     <div class="infoWrap"> 
     <div class="cartSection">

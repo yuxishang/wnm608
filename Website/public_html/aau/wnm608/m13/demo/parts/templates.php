@@ -91,10 +91,106 @@ return $carry.<<<HTML
         <!-- Product Pricing -->
         <div class="single_product-price">
           <span>&dollar;$item->price</span>
-          <a href="http://go-roxy.com/aau/wnm608/m12/cartpage.php" class="cart-btn">Add to cart</a>
+          <a href="#" class="cart-btn js-add-to-cart" data-id="$item->id">Add to cart</a>
         </div>
       </div>
     </main>
 
 HTML;
 }
+
+
+function cartTemplate($carry,$item) {
+return $carry.<<<HTML
+
+     <li class="items odd">    
+    <div class="infoWrap"> 
+    <div class="cartSection">
+    <img src="$item->image_main" alt="" class="itemImg" />
+    <p class="itemNumber">#Cho-Dark-$item->id</p>
+    <h3>$item->name</h3>
+        
+    <p> <input type="text"  class="qty" placeholder="9"/> x &dollar;$item->price</p>
+        
+    <p class="stockStatus">In Stock</p>
+    </div>  
+    <div class="prodTotal cartSection">
+    <p>$45.00</p>
+    </div>
+    <div class="cartSection removeWrap">
+    <a href="#" class="remove">x</a>
+    </div>
+    </div>
+    </li>
+
+
+    <li class="items even">
+    <div class="infoWrap"> 
+    <div class="cartSection">
+    <img src="$item->image_main" alt="" class="itemImg" />
+    <p class="itemNumber">#Cho-Dark-$item->id</p>
+    <h3>$item->name</h3>
+        
+    <p> <input type="text"  class="qty" placeholder="12"/> x  &dollar;$item->price</p>
+        
+    <p class="stockStatus"> In Stock</p>
+    </div>  
+        
+    <div class="prodTotal cartSection">
+    <p>$60.00</p>
+    </div>
+    
+    <div class="cartSection removeWrap">
+    <a href="#" class="remove">x</a>
+    </div>
+    </div>
+    </li>
+
+  <li class="items odd">    
+    <div class="infoWrap"> 
+    <div class="cartSection">
+    <img src="$item->image_main" alt="" class="itemImg" />
+    <p class="itemNumber">#Cho-Dark-$item->id</p>
+    <h3>$item->name</h3>
+        
+    <p> <input type="text"  class="qty" placeholder="9"/> x &dollar;$item->price</p>
+        
+    <p class="stockStatus">In Stock</p>
+    </div>  
+    <div class="prodTotal cartSection">
+    <p>$45.00</p>
+    </div>
+    <div class="cartSection removeWrap">
+    <a href="#" class="remove">x</a>
+    </div>
+    </div>
+    </li>
+
+    <li class="items even">
+    <div class="infoWrap"> 
+    <div class="cartSection">
+    <img src="$item->image_main" alt="" class="itemImg" />
+    <p class="itemNumber">#Cho-Dark-$item->id</p>
+    <h3>Dark Rose</h3>
+        
+    <p> <input type="text"  class="qty" placeholder="12"/> x $5.00</p>
+        
+    <p class="stockStatus"> In Stock</p>
+    </div>  
+        
+    <div class="prodTotal cartSection">
+    <p>$60.00</p>
+    </div>
+    
+    <div class="cartSection removeWrap">
+    <a href="#" class="remove">x</a>
+    </div>
+    </div>
+         <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+      </li>
+      
+HTML;
+}
+
+
+

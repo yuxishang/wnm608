@@ -38,8 +38,6 @@ else switch($_GET['type']) {
 			"
 		);
 		break;
-	case 4564356: break;
-	//Search
 	// Search
 	case 10:
 		if(!isset($_POST['search']))
@@ -48,16 +46,16 @@ else switch($_GET['type']) {
 			"SELECT *
 			FROM `products`
 			WHERE
-			`name` LIKE '%{$_POST['search']}%'
-			ORDER BY `date_creates` DESC
+			`title` LIKE '%{$_POST['search']}%' OR
+			`category` LIKE '%{$_POST['search']}%' OR
+			`description` LIKE '%{$_POST['search']}%'
+			ORDER BY `date_create` DESC
 			limit 12
 			"
 		);
 		break;
-	case 4564356: break;
-}
-
-case 20:
+	// Sort
+	case 20:
 		if(!isset($_POST['sort']) || !isset($_POST['dir']))
 			$output['error'] = "Incorrect Data";
 		else $output['result'] = makeQuery(makeConn(),
@@ -70,7 +68,6 @@ case 20:
 		break;
 	case 4564356: break;
 }
-
 
 
 // print_p($output);
