@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width">
 	<?php include "parts/head.html" ?>
 
+<script>
+  getAPI(1)
+  .then(showList)
+  </script>
 </head>
 <body>
 	<?php include "parts/header.html" ?>
