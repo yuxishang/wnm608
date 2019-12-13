@@ -1,11 +1,18 @@
+
 const showList = d=>{
 	$(".product-list")
 		.html(productListTemplate(d.result))
 }
+
+
+$(()=>{
+
+
 	$(".product-thumbs img").on("mouseenter",function(e){
 		let s = $(this).attr("src");
 		$(".product-imagemain img").attr("src",s);
 	});
+
 
 	$("#list-search-form").on("submit",function(e){
 		e.preventDefault();
@@ -16,12 +23,11 @@ const showList = d=>{
 
 		getAPI(10,{search:s})
 		.then(showList);
-	
-	
 	});
 
-	$(".list-filter").on("click",function(e){
-		let v = this.value;
+
+	$(".list-filter").on("change",function(e){
+		let v = $(this).data("value");
 		console.log(v);
 
 		(
@@ -31,6 +37,29 @@ const showList = d=>{
 		).then(showList);
 	})
 
+
+
+
+	$(".js-add-to-cart").on("click",function(e){
+
+		let c = getStore('cart');
+		let id = $(this).data("id");
+		let p = c.find(o=>o.id==id);
+
+		console.log(c,id,p)
+
+		if(!p) {
+			c.push({
+				'id':id,
+				amount:1
+			});
+		} else p.amount++;
+
+		setStore('cart',c);
+		setCartBadge();
+	})
+	
+})
 		$(".list-sort").on("change",function(e){
 		let v = this.value;
 		console.log(v);

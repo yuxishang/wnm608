@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
 	<?php include "parts/head.html" ?>
 
-<script>
+  <script>
   getAPI(1)
   .then(showList)
   </script>
@@ -32,7 +32,7 @@
   </div>
   <div class="sortt">
 
-    <div class="collection-sort ">
+    <div class="collection-sort">
       <label>Filter by:</label>
       <select class="Filter list-filter">
         <option data-value="">All</option>
