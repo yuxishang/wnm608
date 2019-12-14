@@ -45,10 +45,10 @@
         <option class="list-filter" data-value="Floral">Floral</option>
       </select>
     </div>
-    
+
     <div class="collection-sort">
       <label>Sort by:</label>
-      <select class="list-sort Filter">
+      <select class="list-sort sort">
         <option value="1">Best Selling</option>
         <option value="2">Price Low to High</option>
         <option value="3">Price High to Low</option>
@@ -62,8 +62,7 @@
 
 
         <div class="product-list product-content row gap xs-medium clearfix">
-
-   
+</div>
       <?php include "parts/footer.html" ?>
 </body>
 </html>

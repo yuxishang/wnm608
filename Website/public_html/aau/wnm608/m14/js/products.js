@@ -27,8 +27,9 @@ $(()=>{
 
 
 	$(".list-filter").on("change",function(e){
-		let v = $(this).data("value");
+		let v = this.value;
 		console.log(v);
+
 
 		(
 			v=="" ?
@@ -36,7 +37,6 @@ $(()=>{
 			getAPI(3,{category:v})
 		).then(showList);
 	})
-
 
 
 	$(".js-add-to-cart").on("click",function(e){
