@@ -39,7 +39,6 @@ $(()=>{
 
 
 
-
 	$(".js-add-to-cart").on("click",function(e){
 
 		let c = getStore('cart');
@@ -59,18 +58,20 @@ $(()=>{
 		setCartBadge();
 	})
 	
-})
-		$(".list-sort").on("change",function(e){
+
+	$(".list-sort").on("change",function(e){
 		let v = this.value;
 		console.log(v);
 
 		(
 			v==1 ?
-				getAPI(20,{sort:'Best',dir:'DESC'}) :
+				getAPI(20,{sort:'best',dir:'DESC'}) :
 			v==2 ?
-				getAPI(20,{sort:'Price',dir:'ASC'}) :
+				getAPI(20,{sort:'price',dir:'ASC'}) :
 			v==3 ?
-				getAPI(20,{sort:'Price',dir:'DESC'}) :
+				getAPI(20,{sort:'price',dir:'DESC'}) :
 			getAPI(1)
 		).then(showList);
-	});
+	})
+	
+})

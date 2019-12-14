@@ -43,10 +43,9 @@
         <option class="list-filter" data-value="Coffee">Coffee</option>
         <option class="list-filter" data-value="Caramel">Caramel</option>
         <option class="list-filter" data-value="Floral">Floral</option>
-  
       </select>
     </div>
-
+    
     <div class="collection-sort">
       <label>Sort by:</label>
       <select class="list-sort Filter">
