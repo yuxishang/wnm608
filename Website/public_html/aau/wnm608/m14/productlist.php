@@ -63,6 +63,23 @@
 
         <div class="product-list product-content row gap xs-medium clearfix">
 </div>
+
+<div class="pagecenter">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+<br>
+<br>
+
+
       <?php include "parts/footer.html" ?>
 </body>
 </html>

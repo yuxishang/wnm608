@@ -20,3 +20,22 @@ const getAPI = (type,options) => {
 		}
 	).then(data=>data.json())
 }
+
+const getStore = (s) => {
+	return sessionStorage[s]==undefined ? [] :
+		JSON.parse(sessionStorage[s]);
+}
+const setStore = (s,d) => {
+	sessionStorage[s] = JSON.stringify(d);
+}
+
+
+
+
+const setCartBadge = () => {
+	let c = getStore('cart');
+
+	let l = c.reduce((r,o)=>r+o.amount,0);
+
+	if(l) $(".badge-cart .badge").html(l);
+}

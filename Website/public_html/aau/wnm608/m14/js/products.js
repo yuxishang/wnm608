@@ -7,6 +7,8 @@ const showList = d=>{
 
 $(()=>{
 
+	setCartBadge();
+
 
 	$(".product-thumbs img").on("mouseenter",function(e){
 		let s = $(this).attr("src");
@@ -46,16 +48,17 @@ $(()=>{
 		let p = c.find(o=>o.id==id);
 
 		console.log(c,id,p)
-
 		if(!p) {
 			c.push({
-				'id':id,
-				amount:1
-			});
+			'id':id,
+			amount:1
+		});
 		} else p.amount++;
 
 		setStore('cart',c);
-		setCartBadge();
+		setCartBadge()
+
+	
 	})
 	
 
