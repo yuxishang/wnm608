@@ -2,6 +2,16 @@
  @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
+.product-thumb-admin,
+.product-thumb-admin img {
+  height:9em;
+  width:9em;
+  object-fit:contain;
+}
+.flex-parent { display:flex; }
+.flex-child { flex:1 1 auto; }
+.flex-none { flex:none; }
+
 .container {
     max-width: 1000px;
     margin-right: auto;
@@ -13,9 +23,7 @@
     border-radius: 0.2em;
     padding: 1em;
 }
-.overscroll-x {
-    overflow-x: auto;
-}
+
  /*splash*/
 .css-slider-wrapper {
   display: block;

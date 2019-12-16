@@ -13,7 +13,7 @@
     <div class="pcontainer">
         <form action="">
             <h6>
-                <i class="fas fa-shipping-fast"></i> Shipping Details
+             Shipping Details
             </h6>
             <div class="name">
                 <div>
@@ -61,8 +61,8 @@
                 </div>
             </div>
                  <div class="cc-num">
-               <a href="http://go-roxy.com/aau/wnm608/m12/cartpage.php" class="p-btn" >Back To Cart</a>
-                <a href="http://go-roxy.com/aau/wnm608/m12/confirmation.php" class="p-btn" >Subtmit</a></div>
+               <a href="cartpage.php" class="p-btn" >Back To Cart</a>
+                <a href="confirmation.php" class="p-btn" >Subtmit</a></div>
   </div>
             </div>
         </form>
