@@ -102,17 +102,17 @@ HTML;
 
 function cartTemplate($carry,$item) {
 return $carry.<<<HTML
-
-     <li class="items odd">    
+        
+    <li class="items odd">    
     <div class="infoWrap"> 
     <div class="cartSection">
-    <img src="$item->image_main" alt="" class="itemImg" />
+    <img src="$item->main_images" alt="" class="itemImg" />
     <p class="itemNumber">#Cho-Dark-$item->id</p>
     <h3>$item->name</h3>
         
     <p> <input type="text"  class="qty" placeholder="9"/> x &dollar;$item->price</p>
         
-    <p class="stockStatus">In Stock</p>
+    <p class="stockStatus"> In Stock</p>
     </div>  
     <div class="prodTotal cartSection">
     <p>$45.00</p>
@@ -127,11 +127,11 @@ return $carry.<<<HTML
     <li class="items even">
     <div class="infoWrap"> 
     <div class="cartSection">
-    <img src="$item->image_main" alt="" class="itemImg" />
-    <p class="itemNumber">#Cho-Dark-$item->id</p>
+    <img src="i$item->main_images" alt="" class="itemImg" />
+    <p class="itemNumber">#Cho-Milk-$item->id</p>
     <h3>$item->name</h3>
         
-    <p> <input type="text"  class="qty" placeholder="12"/> x  &dollar;$item->price</p>
+    <p> <input type="text"  class="qty" placeholder="12"/> x &dollar;$item->price</p>
         
     <p class="stockStatus"> In Stock</p>
     </div>  
@@ -146,16 +146,16 @@ return $carry.<<<HTML
     </div>
     </li>
 
-  <li class="items odd">    
+    <li class="items odd">    
     <div class="infoWrap"> 
     <div class="cartSection">
-    <img src="$item->image_main" alt="" class="itemImg" />
+    <img src="$item->main_images" alt="" class="itemImg" />
     <p class="itemNumber">#Cho-Dark-$item->id</p>
     <h3>$item->name</h3>
         
     <p> <input type="text"  class="qty" placeholder="9"/> x &dollar;$item->price</p>
         
-    <p class="stockStatus">In Stock</p>
+    <p class="stockStatus"> In Stock</p>
     </div>  
     <div class="prodTotal cartSection">
     <p>$45.00</p>
@@ -169,11 +169,11 @@ return $carry.<<<HTML
     <li class="items even">
     <div class="infoWrap"> 
     <div class="cartSection">
-    <img src="$item->image_main" alt="" class="itemImg" />
-    <p class="itemNumber">#Cho-Dark-$item->id</p>
-    <h3>Dark Rose</h3>
+    <img src="$item->main_images" alt="" class="itemImg" />
+    <p class="itemNumber">#Cho-Milk-$item->id</p>
+    <h3>$item->name</h3>
         
-    <p> <input type="text"  class="qty" placeholder="12"/> x $5.00</p>
+    <p> <input type="text"  class="qty" placeholder="12"/> x &dollar;$item->price</p>
         
     <p class="stockStatus"> In Stock</p>
     </div>  
@@ -188,6 +188,29 @@ return $carry.<<<HTML
     </div>
          <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
       </li>
+      
+      <!--<li class="items even">Item 2</li>-->
+ 
+    </ul>
+  </div>
+  
+  <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" class="btn"></a></div>
+  
+  <div class="subtotal cf">
+    <ul>
+      <li class="totalRow"><span class="label">Subtotal</span><span class="value">$150.00</span></li>
+      
+          <li class="totalRow"><span class="label">Shipping</span><span class="value">$5.00</span></li>
+      
+            <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
+            <li class="totalRow final"><span class="label">Total</span><span class="value">$159.00</span></li>
+        
+         <li class="totalRow"><a href="purchasepage.php" class="btn continue">Checkout</a></li>
+
+       </ul>
+    </div>
+</div>
       
 HTML;
 }

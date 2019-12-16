@@ -67,6 +67,18 @@ else switch($_GET['type']){
 			"
 		);
 		break;
+	case 30:
+		if(!isset($_POST['cart']))
+			$output['error'] = "No Cart Items";
+		else $output['result'] = makeQuery(makeConn(),
+			"SELECT *
+			FROM `products`
+			WHERE id
+			IN ({$_POST['cart']})
+			"
+		);
+		break;
+
 	case 4564356: break;
 }
 
