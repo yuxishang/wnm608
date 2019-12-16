@@ -870,14 +870,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
 .tableHead {
   display: table;
   width: 100%;
@@ -957,11 +949,11 @@ img {
   font-size: 1.25em;
 }
 .cart .items .cartSection input.qty {
-  width: 2em;
+  width: 3.1em;
   text-align: center;
   font-size: 1em;
   padding: .25em;
-  margin: 1em .5em 0 0;
+  margin: 1em 1em 0 0;
 }
 .cart .items .cartSection .itemImg {
   width:10em;

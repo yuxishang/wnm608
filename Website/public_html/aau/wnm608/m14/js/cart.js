@@ -16,7 +16,17 @@ const makeCartList = () => {
 	.then(d=>{
 		console.log(d)
 
-		$(".cart-list").html(cartListItemTemplate (d.result))
+		let carttotal = 0;
+
+		d.result.forEach(o=>{
+			o.amount = c.find(ci=>ci.id==o.id).amount;
+			o.total = o.amount * o.price;
+		})
+			
+
+
+		$(".cart-list").html(cartListItemTemplate(d.result));
+		makeCartTotals();
 		
 	})
 }
@@ -33,7 +43,7 @@ const makeCartTotals = () => {
 			total:t,
 			items:c.length,
 			tax:t*0.08,
-			aftertax:t*1.08
+			aftertax:t*1.08+5
 		}
 	]))
 }

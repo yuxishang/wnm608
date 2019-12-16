@@ -17,7 +17,11 @@
   </div>
   <div class="cart cart-list">
   </div>
+   <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
+    <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+  <a href="#" class="btn"></a></div>
   <div class="subtotal cf cart-totals">
+</div>
 </div>
   <?php include "parts/footer.html" ?>
 </body>
