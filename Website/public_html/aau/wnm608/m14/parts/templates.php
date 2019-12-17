@@ -18,9 +18,7 @@ return $carry.<<<HTML
           </ins></div></div>
           <div class="add-to-cart text-center">
           <a href="#">ADD TO CART</a></div>
-          <a href="#" class="like"><div class="fav">
-          <input type="checkbox" id="$item->id" class="hidden">
-          <label for="$item->id">&hearts;</label></div></a></div></div>
+          </div></div>
 HTML;
 }
 

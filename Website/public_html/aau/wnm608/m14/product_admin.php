@@ -3,16 +3,6 @@
 require_once "lib/php/helpers.php";
 $conn = makeConn();
 
-// $filename = "data/json_notes.json";
-// $data = get_json($filename);
-
-// print_p($data);
-// print_p($_GET);
-// print_p($_POST);
-
-
-// file_put_contents, json_encode, explode, $_POST
-
 
 
 $empty_product = (object)[
@@ -21,9 +11,8 @@ $empty_product = (object)[
   "category"=>"Nut",
   "description"=>"Rich hazelnut praline whipped with creamy milk chocolate.",
   "image_main"=>"images/hazelnut_main.jpg",
-  "other_images"=>"images/hazelnut_1.jpg"
+  "image_other"=>"images/hazelnut_1.jpg"
 ];
-
 
 
 
@@ -43,7 +32,7 @@ if(isset($_GET['action'])) {
       `category`=?,
       `description`=?,
       `image_main`=?,
-      `other_images`=?,
+      `image_other`=?,
       `date_modify`=NOW()
       WHERE `id`=?
       ");
@@ -53,7 +42,7 @@ if(isset($_GET['action'])) {
       $_POST["category"],
       $_POST["description"],
       $_POST["image_main"],
-      $_POST["other_images"],
+      $_POST["image_other"],
       $_GET['id']
     );
     $statement->execute();
@@ -62,19 +51,6 @@ if(isset($_GET['action'])) {
     header("location:product_admin.php?id={$_GET['id']}");
   }
   if($_GET['action'] == 'create') {
-    // $empty_product->name = $_POST['edit-name'];
-    // $empty_product->type = $_POST['edit-type'];
-    // $empty_product->email = $_POST['edit-email'];
-    // $empty_product->classes = explode(", ",$_POST['edit-classes']);
-
-    // $id = count($data->users);
-
-    // $data->users[] = $empty_product;
-    // // array_push($data->users,$empty_product);
-
-    // file_put_contents($filename, json_encode($data));
-
-
 
     $statement = $conn->prepare("INSERT INTO `products`
       (
@@ -83,8 +59,8 @@ if(isset($_GET['action'])) {
         `category`,
         `description`,
         `image_main`,
-        `other_images`,
-        `date_create`,
+        `image_other`,
+        `date_creates`,
         `date_modify`
       )
       VALUES (?,?,?,?,?,?,NOW(),NOW())
@@ -95,7 +71,7 @@ if(isset($_GET['action'])) {
       $_POST["category"],
       $_POST["description"],
       $_POST["image_main"],
-      $_POST["other_images"]
+      $_POST["image_other"]
     );
     $statement->execute();
     if($conn->errno) die($conn->error);
@@ -155,16 +131,14 @@ echo <<<HTML
     <a href="product_admin.php">Back</a>
   </div>
   <div class="flex-none">
-    [<a href="product_admin.php?id=$id&action=delete">Delete</a>]
+    [<a href="product_admin.php?id=$id&action=delete">DELETE</a>]
   </div>
 </div>
 <div class="cart">
 <div class="pwrapper">
     <div class="pcontainer">
-        <form method="post" action="?id=$id&action=$createorupdate">
-            <h6>
-            $addoredit Product
-            </h6>
+ <form method="post" action="?id=$id&action=$createorupdate">
+            <h6>$addoredit Product</h6>
             <div class="name">
                 <div>
                     <label for="name">Name</label>
@@ -190,8 +164,8 @@ echo <<<HTML
                    <input class="form-input" id="image_main" name="image_main" type="text" value="$o->image_main">
                 </div>
                 <div>
-                    <label for="other_images">other_images</label>
-                    <input class="form-input" id="other_images" name="other_images" type="text" value="$o->other_images">
+                    <label for="image_other">image_other</label>
+                    <input class="form-input" id="image_other" name="image_other" type="text" value="$o->image_other">
                 </div>
             </div>
                  <div class="cc-num">
@@ -230,13 +204,10 @@ HTML;
     </nav>
     
   </header>
+      <div class="wrap cf">
+      <div class="heading cf">
 
 
-  <div class="wrap cf">
-  <div class="heading cf">
-    <h1>Product List</h1>
-  </div>
-    <div class="cart ">
 
     <?php
 
@@ -249,17 +220,15 @@ HTML;
           "SELECT * FROM `products` WHERE `id`='{$_GET['id']}'");
         makeProductForm( $data[0] );
       }
-      // ternary conditional
-      // makeProductForm(
-      //  $_GET['id']=='new' ?
-      //    $empty_product :
-      //    $data->users[$_GET['id']]
-      // );
+  
         
     } else {
 
       ?>
-
+      
+      <h1>Product List</h1>
+      </div>
+      <div class="cart">
     
 
       <div class="itemlist">
