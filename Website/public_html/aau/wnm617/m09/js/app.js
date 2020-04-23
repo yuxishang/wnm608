@@ -19,7 +19,7 @@ $(()=>{
 			//somecode
 			break;
 			case "profile-page":
-			//somecode
+				showUserPage();
 			break;
 			case"shop-profile page":
 			//somecode
