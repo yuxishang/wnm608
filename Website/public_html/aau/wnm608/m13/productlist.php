@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
 	<?php include "parts/head.html" ?>
 
-<script>
+  <script>
   getAPI(1)
   .then(showList)
   </script>
@@ -20,28 +20,35 @@
         <div class="title-section margin-bottom-52">
         <h2 class="title col-md-12 "> CHOCOLATE</h2>
         </div>
-    <nav class="product-filter ">
 
-  <div class="sort">
+<nav class="product-filter ">
 
-    <div class="collection-sort ">
+<div class="container">
+    <form id="list-search-form">
+      <label>
+        <input type="search" class="list-search form-input" placeholder="Search for Product">
+      </label>
+    </form>
+  </div>
+  <div class="sortt">
+
+    <div class="collection-sort">
       <label>Filter by:</label>
-      <select class="Filter">
-        <option value="">All</option>
-        <option class="list-filter" value="Nut">Nut</option>
-        <option class="list-filter" value="Fruity">Fruity</option>
-        <option class="list-filter" value="Alcohol">Alcohol</option>
-        <option class="list-filter" value="Matcha">Matcha</option>
-        <option class="list-filter" value="Coffee">Coffee</option>
-        <option class="list-filter" value="Caramel">Caramel</option>
-        <option class="list-filter" value="Floral">Floral</option>
-  
+      <select class="Filter list-filter">
+        <option data-value="">All</option>
+        <option class="list-filter" data-value="Nut">Nut</option>
+        <option class="list-filter" data-value="Fruity">Fruity</option>
+        <option class="list-filter" data-value="Alcohol">Alcohol</option>
+        <option class="list-filter" data-value="Matcha">Matcha</option>
+        <option class="list-filter" data-value="Coffee">Coffee</option>
+        <option class="list-filter" data-value="Caramel">Caramel</option>
+        <option class="list-filter" data-value="Floral">Floral</option>
       </select>
     </div>
 
     <div class="collection-sort">
       <label>Sort by:</label>
-      <select class="Filter list-sort">
+      <select class="list-sort sort">
         <option value="1">Best Selling</option>
         <option value="2">Price Low to High</option>
         <option value="3">Price High to Low</option>
@@ -52,9 +59,10 @@
 
 </nav>
 
-        <div class="product-list product-content row gap xs-medium clearfix">
 
-   
+
+        <div class="product-list product-content row gap xs-medium clearfix">
+</div>
       <?php include "parts/footer.html" ?>
 </body>
 </html>

@@ -1,5 +1,3 @@
-/* GRID */
-
 .row {
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -89,3 +87,220 @@
 	.col-xl-11 { grid-column: span 11; }
 	.col-xl-12 { grid-column: span 12; }
 }
+
+/* #Base 960 Grid
+================================================== */
+
+    .mconta                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .mconta .column,
+    .mconta .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;}
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .mconta .one.column,
+    .mconta .one.columns                     { width: 40px;  }
+    .mconta .two.columns                     { width: 100px; }
+    .mconta .three.columns                   { width: 160px; }
+    .mconta .four.columns                    { width: 220px; }
+    .mconta .five.columns                    { width: 280px; }
+    .mconta .six.columns                     { width: 340px; }
+    .mconta .seven.columns                   { width: 400px; }
+    .mconta .eight.columns                   { width: 460px; }
+    .mconta .nine.columns                    { width: 520px; }
+    .mconta .ten.columns                     { width: 580px; }
+    .mconta .eleven.columns                  { width: 640px; }
+    .mconta .twelve.columns                  { width: 700px; }
+    .mconta .thirteen.columns                { width: 760px; }
+    .mconta .fourteen.columns                { width: 820px; }
+    .mconta .fifteen.columns                 { width: 880px; }
+    .mconta .sixteen.columns                 { width: 940px; }
+
+    .mconta .one-third.column                { width: 300px; }
+    .mconta .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .mconta .offset-by-one                   { padding-left: 60px;  }
+    .mconta .offset-by-two                   { padding-left: 120px; }
+    .mconta .offset-by-three                 { padding-left: 180px; }
+    .mconta .offset-by-four                  { padding-left: 240px; }
+    .mconta .offset-by-five                  { padding-left: 300px; }
+    .mconta .offset-by-six                   { padding-left: 360px; }
+    .mconta .offset-by-seven                 { padding-left: 420px; }
+    .mconta .offset-by-eight                 { padding-left: 480px; }
+    .mconta .offset-by-nine                  { padding-left: 540px; }
+    .mconta .offset-by-ten                   { padding-left: 600px; }
+    .mconta .offset-by-eleven                { padding-left: 660px; }
+    .mconta .offset-by-twelve                { padding-left: 720px; }
+    .mconta .offset-by-thirteen              { padding-left: 780px; }
+    .mconta .offset-by-fourteen              { padding-left: 840px; }
+    .mconta .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .mcontainer                                  { width: 768px; }
+        .mcontainer .column,
+        .mcontainer .columns                         { margin-left: 10px; margin-right: 10px;  margin-top: 10px; margin-bottom: 10px;}
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .mcontainer .one.column,
+        .mcontainer .one.columns                     { width: 28px; }
+        .mcontainer .two.columns                     { width: 76px; }
+        .mcontainer .three.columns                   { width: 124px; }
+        .mcontainer .four.columns                    { width: 172px; }
+        .mcontainer .five.columns                    { width: 220px; }
+        .mcontainer .six.columns                     { width: 268px; }
+        .mcontainer .seven.columns                   { width: 316px; }
+        .mcontainer .eight.columns                   { width: 364px; }
+        .mcontainer .nine.columns                    { width: 412px; }
+        .mcontainer .ten.columns                     { width: 460px; }
+        .mcontainer .eleven.columns                  { width: 508px; }
+        .mcontainer .twelve.columns                  { width: 556px; }
+        .mcontainer .thirteen.columns                { width: 604px; }
+        .mcontainer .fourteen.columns                { width: 652px; }
+        .mcontainer .fifteen.columns                 { width: 700px; }
+        .mcontainer .sixteen.columns                 { width: 748px; }
+
+        .mcontainer .one-third.column                { width: 236px; }
+        .mcontainer .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .mcontainer .offset-by-one                   { padding-left: 48px; }
+        .mcontainer .offset-by-two                   { padding-left: 96px; }
+        .mcontainer .offset-by-three                 { padding-left: 144px; }
+        .mcontainer .offset-by-four                  { padding-left: 192px; }
+        .mcontainer .offset-by-five                  { padding-left: 240px; }
+        .mcontainer .offset-by-six                   { padding-left: 288px; }
+        .mcontainer .offset-by-seven                 { padding-left: 336px; }
+        .mcontainer .offset-by-eight                 { padding-left: 384px; }
+        .mcontainer .offset-by-nine                  { padding-left: 432px; }
+        .mcontainer .offset-by-ten                   { padding-left: 480px; }
+        .mcontainer .offset-by-eleven                { padding-left: 528px; }
+        .mcontainer .offset-by-twelve                { padding-left: 576px; }
+        .mcontainer .offset-by-thirteen              { padding-left: 624px; }
+        .mcontainer .offset-by-fourteen              { padding-left: 672px; }
+        .mcontainer .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .mcontainer { width: 420px; }
+        .mcontainer .columns,
+        .mcontainer .column {  margin-left: 0; margin-right: 0; margin-top: 10px; margin-bottom: 10px;}
+
+        .mcontainer .one.column,
+        .mcontainer .one.columns,
+        .mcontainer .two.columns,
+        .mcontainer .three.columns,
+        .mcontainer .four.columns,
+        .mcontainer .five.columns,
+        .mcontainer .six.columns,
+        .mcontainer .seven.columns,
+        .mcontainer .eight.columns,
+        .mcontainer .nine.columns,
+        .mcontainer .ten.columns,
+        .mcontainer .eleven.columns,
+        .mcontainer .twelve.columns,
+        .mcontainer .thirteen.columns,
+        .mcontainer .fourteen.columns,
+        .mcontainer .fifteen.columns,
+        .mcontainer .sixteen.columns,
+        .mcontainer .one-third.column,
+        .mcontainer .two-thirds.column  { width: 420px; }
+
+        /* Offsets */
+        .mcontainer .offset-by-one,
+        .mcontainer .offset-by-two,
+        .mcontainer .offset-by-three,
+        .mcontainer .offset-by-four,
+        .mcontainer .offset-by-five,
+        .mcontainer .offset-by-six,
+        .mcontainer .offset-by-seven,
+        .mcontainer .offset-by-eight,
+        .mcontainer .offset-by-nine,
+        .mcontainer .offset-by-ten,
+        .mcontainer .offset-by-eleven,
+        .mcontainer .offset-by-twelve,
+        .mcontainer .offset-by-thirteen,
+        .mcontainer .offset-by-fourteen,
+        .mcontainer .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 319px) {
+        .mcontainer { width: 220px; }
+        .mcontainer .columns,
+        .mcontainer .column { margin-left: 0; margin-right: 0; margin-top: 10px; margin-bottom: 10px;}
+
+        .mcontainer .one.column,
+        .mcontainer .one.columns,
+        .mcontainer .two.columns,
+        .mcontainer .three.columns,
+        .mcontainer .four.columns,
+        .mcontainer .five.columns,
+        .mcontainer .six.columns,
+        .mcontainer .seven.columns,
+        .mcontainer .eight.columns,
+        .mcontainer .nine.columns,
+        .mcontainer .ten.columns,
+        .mcontainer .eleven.columns,
+        .mcontainer .twelve.columns,
+        .mcontainer .thirteen.columns,
+        .mcontainer .fourteen.columns,
+        .mcontainer .fifteen.columns,
+        .mcontainer .sixteen.columns,
+        .mcontainer .one-third.column,
+        .mcontainer .two-thirds.column { width: 220px; }
+    }
+
+/* #Mobile 
+================================================== */
+
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+        .mcontainer { width: 300px; }
+        .mcontainer .columns,
+        .mcontainer .column {  margin-left: 0; margin-right: 0;  margin-top: 10px; margin-bottom: 10px;}
+
+        .mcontainer .one.column,
+        .mcontainer .one.columns,
+        .mcontainer .two.columns,
+        .mcontainer .three.columns,
+        .mcontainer .four.columns,
+        .mcontainer .five.columns,
+        .mcontainer .six.columns,
+        .mcontainer .seven.columns,
+        .mcontainer .eight.columns,
+        .mcontainer .nine.columns,
+        .mcontainer .ten.columns,
+        .mcontainer .eleven.columns,
+        .mcontainer .twelve.columns,
+        .mcontainer .thirteen.columns,
+        .mcontainer .fourteen.columns,
+        .mcontainer .fifteen.columns,
+        .mcontainer .sixteen.columns,
+        .mcontainer .one-third.column,
+        .mcontainer .two-thirds.column { width: 300px; }
+    }
+

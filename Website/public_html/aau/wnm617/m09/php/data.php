@@ -76,7 +76,6 @@ function makeStatement($c,$t,$p) {
 			return makeQuery($c,"SELECT * FROM `track_shops` WHERE id = ?","i",$p);
 		case "location_by_id":
 			return makeQuery($c,"SELECT * FROM `track_locations` WHERE id = ?","i",$p);
-
 		case "check_login":
 			return makeQuery($c,"SELECT id FROM `track_users` WHERE username = ? AND password = md5(?)","ss",$p);
 

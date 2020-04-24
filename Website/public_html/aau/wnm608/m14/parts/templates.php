@@ -16,8 +16,6 @@ return $carry.<<<HTML
           <ins>
           <span class="amount">&dollar;$item->price</span>
           </ins></div></div>
-          <div class="add-to-cart text-center">
-          <a href="#">ADD TO CART</a></div>
           </div></div>
 HTML;
 }

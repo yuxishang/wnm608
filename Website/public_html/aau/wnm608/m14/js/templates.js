@@ -15,8 +15,6 @@ const productListTemplate = templater(o=>`
           <ins>
           <span class="amount">&dollar;${o.price}</span>
           </ins></div></div>
-          <div class="add-to-cart text-center">
-          <a href="#">ADD TO CART</a></div>
          </div></div>`
           );
 

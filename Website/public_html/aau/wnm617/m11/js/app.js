@@ -8,20 +8,27 @@ $(()=>{
 	// ROUTING
 	.on("pagecontainerbeforeshow",function(e,ui){
 		console.log(ui.toPage[0].id)
-		switch(ui.toPage[0].id) {
+		switch(ui.toPage[0].id){
 			case "recent-page":
-				// some code
+				showRecentPage();
 				break;
 			case "list-page":
 				showListPage();
 				break;
-			case "shop-profile-page":
-				showShopPage();
+			case "sign-up page":
+				//somecode
 				break;
 			case "profile-page":
 				showUserPage();
 				break;
+			case"shop-profile page":
+		   	    showAnimalPage();
+				break;
+			case "add-location-page":
+				showAddLocationPage();
+				break;
 		}
+		
 	})
 
 	/* FORMS */
@@ -37,6 +44,25 @@ $(()=>{
 		sessionStorage.removeItem("userId")
 		checkUserId();
 	})
+	.on("click",".animal-jump",function(e){
+		if($(this).data("id")===undefined) {
+			throw("No id defined on this element");
+		}
+		sessionStorage.animalId = $(this).data("id");
+	})
+
+	.on("click",".nav-tabs a",function(e) {
+		let id = $(this).parent().index();
+		$(this).parent().addClass("active")
+			.siblings().removeClass("active");
+
+		$(this).parent().parent().parent().next().children()
+			.eq(id).addClass("active")
+			.siblings().removeClass("active")
+	})
+
+
+
 
 
 

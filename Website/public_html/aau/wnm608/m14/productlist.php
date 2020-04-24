@@ -23,7 +23,7 @@
 
 <nav class="product-filter ">
 
-<div class="lcontainer">
+<div class="lcontainer form-group">
     <form id="list-search-form">
       <label>
         <input type="search" class="list-search form-input" placeholder="Search for Product">

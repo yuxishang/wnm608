@@ -7,6 +7,7 @@ const showListPage = async () => {
 	});
 
 	console.log(d);
+
 }
 
 

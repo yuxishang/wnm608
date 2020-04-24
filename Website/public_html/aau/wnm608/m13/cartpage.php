@@ -121,7 +121,7 @@
             <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
             <li class="totalRow final"><span class="label">Total</span><span class="value">$159.00</span></li>
         
-         <li class="totalRow"><a href="http://go-roxy.com/aau/wnm608/m12/purchasepage.php" class="btn continue">Checkout</a></li>
+         <li class="totalRow"><a href="http://go-roxy.com/aau/wnm608/m13/purchasepage.php" class="btn continue">Checkout</a></li>
 
        </ul>
     </div>

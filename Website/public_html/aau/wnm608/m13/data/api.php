@@ -50,7 +50,7 @@ else switch($_GET['type']){
 			`name` LIKE '%{$_POST['search']}%' OR
 			`category` LIKE '%{$_POST['search']}%' OR
 			`description` LIKE '%{$_POST['search']}%'
-			ORDER BY `date_create` DESC
+			ORDER BY `date_creates` DESC
 			limit 12
 			"
 		);

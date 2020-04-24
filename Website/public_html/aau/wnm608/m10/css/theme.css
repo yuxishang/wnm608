@@ -303,7 +303,6 @@ body{
   margin-left: 15px;
 }
 .boxed {
-  overflow: hidden;
   position: relative;
 }
 .boxed {
@@ -312,9 +311,6 @@ body{
   margin: 0 auto;
   background: #fff;
   height: 100%;
-  overflow: hidden;
-    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.02);
-       -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.02);
             box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.02);
 }
 
